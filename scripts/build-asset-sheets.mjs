@@ -74,7 +74,7 @@ async function buildPreview(category, ids, sourceDir, outputDir) {
       }
       const canonical = `public/assets/${sourceDir}/${id}.webp`;
       const sourceBuffer = await sharp(await read(source)).png().toBuffer();
-      await write(canonical, await sharp(sourceBuffer).webp({ quality: 92, alphaQuality: 100 }).toBuffer());
+      if (source !== canonical || !(await exists(canonical))) await write(canonical, await sharp(sourceBuffer).webp({ quality: 92, alphaQuality: 100 }).toBuffer());
       const thumb = await renderSvg(source, 640, 360);
       const tag = await label(id, 640);
       composites.push({ input: thumb, left: index % 4 * 640, top: Math.floor(index / 4) * 360 });

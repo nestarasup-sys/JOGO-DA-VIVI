@@ -14,12 +14,15 @@ O runtime ativo usa `src/data/season1.json`, `src/game/memories.ts`, `src/data/c
 
 ```powershell
 npm run assets:inventory
+npm run assets:ai-import
 npm run assets:sheets
 npm run assets:slice
 npm run assets:rebuild-all
 ```
 
 `assets:inventory` cria `tools/generated/asset-inventory.json` e `docs/ASSET_INVENTORY.md`. `assets:sheets` rasteriza as fontes SVG existentes e cria os previews. `assets:slice` recorta as células dos sheets de personagens e atualiza os WebP individuais.
+
+Sheets geradas por IA entram em `tools/incoming/ai-character-sheets/<id>-sheet.png`. `assets:ai-import` remove o fundo conectado, normaliza cada célula para 512×768 e promove a sheet para fonte preferencial do build.
 
 ## Estado atual
 
