@@ -11,16 +11,18 @@ export type GameState={
  choices:number;unlockedCG:string[];ownedOutfits:string[];equipped:string;visited:string[];eventDone:string[];
  messages:string[];story:Story;playerOpen:boolean;playerEpisode:number;playerNode:number;
  history:HistoryLine[];decisionLog:DecisionLog[];autoMode:boolean;
+ settings:{textSpeed:number;autoDelay:number;reducedMotion:boolean;highContrast:boolean;masterVolume:number};
  setPlayer:(ep:number,open?:boolean)=>void;nextNode:()=>void;applyEffects:(e?:Effects)=>void;completeEpisode:(ep:number)=>void;
  buyOutfit:(id:string,price:number)=>boolean;visit:(id:string)=>void;finishEvent:(id:string,reward:number,aff?:string|null)=>void;
  setStory:(story:Story)=>void;resetStory:()=>void;resetGame:()=>void;pushHistory:(line:Omit<HistoryLine,'at'>)=>void;
- recordDecision:(entry:Omit<DecisionLog,'at'>)=>void;setAutoMode:(value:boolean)=>void;
+ recordDecision:(entry:Omit<DecisionLog,'at'>)=>void;setAutoMode:(value:boolean)=>void;setSettings:(patch:Partial<GameState['settings']>)=>void;
 };
 const initial={
  name:'Lia',coins:260,episode:1,unlockedEpisode:1,completed:[],affinity:{gael:0,leon:0,ravi:0},
  traits:{empathy:0,courage:0,humor:0},route:null,flags:{},choices:0,unlockedCG:[],ownedOutfits:['starter'],
  equipped:'starter',visited:[],eventDone:[],messages:['Sistema Aurora'],story:rawStory as Story,playerOpen:false,
- playerEpisode:1,playerNode:0,history:[] as HistoryLine[],decisionLog:[] as DecisionLog[],autoMode:false
+ playerEpisode:1,playerNode:0,history:[] as HistoryLine[],decisionLog:[] as DecisionLog[],autoMode:false,
+ settings:{textSpeed:12,autoDelay:1450,reducedMotion:false,highContrast:false,masterVolume:0.8}
 };
 export const useGame=create<GameState>()(persist((set,get)=>({...initial,
  setPlayer:(ep,open=true)=>set({playerEpisode:ep,playerNode:0,playerOpen:open,autoMode:false}),
@@ -58,5 +60,6 @@ export const useGame=create<GameState>()(persist((set,get)=>({...initial,
  resetGame:()=>set({...initial,story:get().story}),
  pushHistory:(line)=>set(s=>({history:[...s.history,{...line,at:Date.now()}].slice(-250)})),
  recordDecision:(entry)=>set(s=>({choices:s.choices+1,decisionLog:[...s.decisionLog,{...entry,at:Date.now()}].slice(-120)})),
- setAutoMode:(value)=>set({autoMode:value})
+ setAutoMode:(value)=>set({autoMode:value}),
+ setSettings:(patch)=>set(s=>({settings:{...s.settings,...patch}}))
 }),{name:'aurora-v4-save',partialize:s=>({...s,playerOpen:false,autoMode:false})}));
