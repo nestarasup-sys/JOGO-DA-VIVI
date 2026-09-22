@@ -11,7 +11,8 @@
     "test:watch": "vitest",
     "validate:story": "node scripts/validate-story.mjs",
     "assets:inventory": "node scripts/inventory-assets.mjs",
-    "assets:sheets": "npm run assets:inventory && node scripts/build-asset-sheets.mjs",
+    "assets:ai-import": "node scripts/import-ai-character-sheets.mjs",
+    "assets:sheets": "npm run assets:inventory && npm run assets:ai-import && node scripts/build-asset-sheets.mjs",
     "assets:slice": "npm run assets:sheets && node scripts/slice-character-sheets.mjs",
     "assets:rebuild-all": "npm run assets:slice",
     "check": "npm run assets:inventory && npm run assets:slice && npm run validate:story && npm run test && npm run build"

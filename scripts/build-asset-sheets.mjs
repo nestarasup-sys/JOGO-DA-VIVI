@@ -20,6 +20,13 @@ const sourceByCharacter = { player: 'public/assets/characters/vivi-sheet.svg', g
 const sourceOrder = ['neutral', 'smile', 'serious', 'angry', 'blush', 'surprised'];
 for (const character of inventory.active.characters) {
   const source = sourceByCharacter[character];
+  const aiSource = `tools/generated/ai-character-sheets/${character}-sheet.png`;
+  if (await exists(aiSource)) {
+    const out = `public/assets/sheets/characters/${character}-sheet.webp`;
+    await write(out, await sharp(await read(aiSource)).webp({ quality: 94, alphaQuality: 100, lossless: true }).toBuffer());
+    sheetManifest.sheets.push({ category: 'characters', id: character, file: out, columns: 4, rows: 2, items: expr.map((expression, index) => ({ id: expression, x: index % 4 * 512, y: Math.floor(index / 4) * 768, width: 512, height: 768, source: expression, status: 'ai-generated' })) });
+    continue;
+  }
   if (!source || !(await exists(source))) continue;
   const sourceMeta = await sharp(await read(source)).metadata();
   const cellW = Math.floor(sourceMeta.width / 6);
