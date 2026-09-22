@@ -10,6 +10,7 @@ const activeAssetsPath = path.join(root, 'src', 'assets.ts');
 const contentPath = path.join(root, 'src', 'data', 'content.ts');
 const memoriesPath = path.join(root, 'src', 'game', 'memories.ts');
 const deadStoryPath = path.join(root, 'public', 'content', 'story.json');
+const fallbackPath = path.join(root, 'tools', 'generated', 'asset-fallbacks.json');
 
 const expressionOrder = ['neutral', 'smile', 'tease', 'serious', 'blush', 'angry', 'sad', 'surprised'];
 const imageExtensions = new Set(['.svg', '.png', '.jpg', '.jpeg', '.webp', '.avif', '.gif']);
@@ -51,6 +52,8 @@ const story = JSON.parse(await read(activeStoryPath));
 const [typesSource, assetsSource, contentSource, memoriesSource, deadStorySource] = await Promise.all([
   read(activeTypesPath), read(activeAssetsPath), read(contentPath), read(memoriesPath), read(deadStoryPath)
 ]);
+let fallbacks = {};
+try { fallbacks = JSON.parse(await read(fallbackPath)); } catch { /* first inventory run */ }
 const refs = { characters: new Set(), expressions: new Set(), backgrounds: new Set(), cgs: new Set() };
 walkStory(story, refs);
 for (const id of stringsFrom(memoriesSource, /id:'([^']+)'/g)) if (id.startsWith('cg_')) add(refs.cgs, id);
@@ -88,18 +91,21 @@ for (const character of canonicalCharacters) {
   for (const expression of canonicalExpressions) {
     const exact = characterFiles.find(file => new RegExp(`/${expression}\\.(png|webp|svg)$`).test(file));
     const fallback = characterFiles.find(file => /\/neutral\.(png|webp|svg)$/.test(file));
-    addEntry('character-sprite', `${character}/${expression}`, exact || fallback || `${assetPath('character-sprite', character)}${expression}.webp`, exact ? 'ok' : fallback ? 'missing' : 'missing', exact ? 'asset canônico encontrado' : fallback ? 'expressão não existe na fonte; saída usa fallback documentado' : 'sem fonte para geração');
+    const generatedFallback = fallbacks.characters?.[character]?.[expression];
+    addEntry('character-sprite', `${character}/${expression}`, exact || fallback || `${assetPath('character-sprite', character)}${expression}.webp`, generatedFallback ? 'missing' : exact ? 'ok' : fallback ? 'missing' : 'missing', generatedFallback ? `fallback de ${generatedFallback}; arte final ausente` : exact ? 'asset canônico encontrado' : fallback ? 'expressão não existe na fonte; saída usa fallback documentado' : 'sem fonte para geração');
   }
 }
 for (const id of canonicalBackgrounds) {
   const matches = byCategory.background.filter(file => new RegExp(`/${id}\\.(png|webp|svg)$`).test(file));
   const canonical = matches.find(file => file.endsWith('.webp')) || matches.find(file => file.endsWith('.png')) || matches.find(file => file.endsWith('.svg'));
-  addEntry('background', id, canonical || `public/assets/backgrounds/${id}.webp`, matches.some(file => file.endsWith('.webp')) ? 'ok' : matches.length > 1 ? 'duplicated' : matches.length ? 'ok' : 'missing', matches.some(file => file.endsWith('.webp')) ? 'saída WebP canônica disponível; SVG preservado como fonte' : matches.length > 1 ? `${matches.length} arquivos candidatos` : matches.length ? 'referenciado pela campanha ou catálogo ativo' : 'referenciado, mas não encontrado');
+  const fallback = fallbacks.backgrounds?.[id];
+  addEntry('background', id, canonical || `public/assets/backgrounds/${id}.webp`, fallback ? 'missing' : matches.some(file => file.endsWith('.webp')) ? 'ok' : matches.length > 1 ? 'duplicated' : matches.length ? 'ok' : 'missing', fallback ? `fallback de ${fallback}; arte final ausente` : matches.some(file => file.endsWith('.webp')) ? 'saída WebP canônica disponível; SVG preservado como fonte' : matches.length > 1 ? `${matches.length} arquivos candidatos` : matches.length ? 'referenciado pela campanha ou catálogo ativo' : 'referenciado, mas não encontrado');
 }
 for (const id of canonicalCgs) {
   const matches = byCategory.cg.filter(file => new RegExp(`/${id}\\.(png|webp|svg)$`).test(file));
   const canonical = matches.find(file => file.endsWith('.webp')) || matches.find(file => file.endsWith('.png')) || matches.find(file => file.endsWith('.svg'));
-  addEntry('cg', id, canonical || `public/assets/cg/${id}.webp`, matches.some(file => file.endsWith('.webp')) ? 'ok' : matches.length > 1 ? 'duplicated' : matches.length ? 'ok' : 'missing', matches.some(file => file.endsWith('.webp')) ? 'saída WebP canônica disponível; SVG preservado como fonte' : matches.length > 1 ? `${matches.length} arquivos candidatos` : matches.length ? 'referenciado pela campanha, finais ou galeria' : 'referenciado, mas não encontrado');
+  const fallback = fallbacks.cgs?.[id];
+  addEntry('cg', id, canonical || `public/assets/cg/${id}.webp`, fallback ? 'missing' : matches.some(file => file.endsWith('.webp')) ? 'ok' : matches.length > 1 ? 'duplicated' : matches.length ? 'ok' : 'missing', fallback ? `fallback de ${fallback}; arte final ausente` : matches.some(file => file.endsWith('.webp')) ? 'saída WebP canônica disponível; SVG preservado como fonte' : matches.length > 1 ? `${matches.length} arquivos candidatos` : matches.length ? 'referenciado pela campanha, finais ou galeria' : 'referenciado, mas não encontrado');
 }
 for (const file of [...byCategory.background, ...byCategory.cg, ...sourceCharacterSheets]) {
   const used = entries.some(entry => entry.currentPath === file);
