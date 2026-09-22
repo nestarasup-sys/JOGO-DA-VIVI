@@ -4,6 +4,7 @@ import {X,History,Pause,Play} from 'lucide-react';
 import {useGame} from '../store/gameStore';
 import {episodeById,resolveNode} from '../game/engine';
 import {choiceImpact,impactLabel} from '../game/relationships';
+import {dynamicChoices} from '../game/dynamicChoices';
 import {bg,sprite,cg} from '../assets';
 import type {Effects} from '../game/types';
 
@@ -26,6 +27,7 @@ export function NarrativePlayer(){
  const raw=ep?.nodes[g.playerNode];
  const node=useMemo(()=>raw?resolveNode(raw,g.flags,g.route,topRoute(g.affinity)):undefined,[raw,g.flags,g.route,g.affinity]);
  const fullText=((node?.text||'').replaceAll('{name}',g.name));
+ const availableChoices=node?.choice?[...node.choice,...dynamicChoices(ep?.id||0,g.playerNode,g.traits,g.route)]:[];
 
  useEffect(()=>{
   if(!g.playerOpen||!node)return;
@@ -81,7 +83,7 @@ export function NarrativePlayer(){
    <button title="Sair" onClick={()=>g.setPlayer(g.playerEpisode,false)}><X size={18}/></button>
   </div></div>
   <div className={`sprites n${show.length}`}>{show.map(([id,expr],i)=><motion.img key={id+i} initial={{opacity:0,y:30}} animate={{opacity:1,y:0}} src={sprite(id,expr)} />)}</div>
-  {node.choice&&<div className="choices">{node.choice.map((c,i)=>{const impact=choiceImpact(c.effects);return <button key={i} onClick={()=>choose(c.text,c.effects)}><small className={`impact impact-${impact}`}>{impactLabel(impact)}</small><b>{c.text}</b>{c.tag&&<small>{c.tag}</small>}</button>})}</div>}
+  {node.choice&&<div className="choices">{availableChoices.map((c,i)=>{const impact=choiceImpact(c.effects);return <button key={i} className={'requirement' in c?'personalityChoice':''} onClick={()=>choose(c.text,c.effects)}><small className={`impact impact-${impact}`}>{'requirement' in c?`DESBLOQUEADA • ${c.requirement}`:impactLabel(impact)}</small><b>{c.text}</b>{c.tag&&<small>{c.tag}</small>}</button>})}</div>}
   <div className="dialogue" onClick={next}><span>{node.speaker==='Player'?g.name:node.speaker||'Narrador'}</span><p>{typed}</p><small>{typed!==fullText?'clique para revelar ▾':'clique para continuar ▾'}</small></div>
   {feedback&&<motion.div className="relationship-feedback" initial={{opacity:0,y:-10}} animate={{opacity:1,y:0}}>{feedback}</motion.div>}
   {historyOpen&&<div className="historyOverlay" onClick={()=>setHistoryOpen(false)}><aside onClick={e=>e.stopPropagation()}><header><div><small>DIÁRIO DA HISTÓRIA</small><h2>Histórico</h2></div><button onClick={()=>setHistoryOpen(false)}>×</button></header><section>{[...g.history].reverse().map((h,i)=><article key={h.at+i}><b>{h.speaker}</b><p>{h.text}</p></article>)}{!g.history.length&&<p className="historyEmpty">As falas aparecem aqui conforme você avança.</p>}</section></aside></div>}
