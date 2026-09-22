@@ -12,9 +12,10 @@ export function relationshipStage(value:number){
  return [...stages].reverse().find(s=>v>=s.min)??stages[0];
 }
 export function relationshipProgress(value:number){
- const stage=relationshipStage(value);
+ const v=Math.max(0,Math.min(100,value));
+ const stage=relationshipStage(v);
  if(stage.next===null)return 100;
- return Math.round(((value-stage.min)/(stage.next-stage.min))*100);
+ return Math.max(0,Math.min(100,Math.round(((v-stage.min)/(stage.next-stage.min))*100)));
 }
 export function choiceImpact(effects?:{affinity?:Record<string,number>;route?:string;flags?:Record<string,unknown>}){
  const deltas=Object.values(effects?.affinity||{}).map(Number).filter(Number.isFinite);
