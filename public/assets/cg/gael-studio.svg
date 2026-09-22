@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2a1c31"/><stop offset="1" stop-color="#946d84"/></linearGradient><filter id="b"><feGaussianBlur stdDeviation="24"/></filter></defs>
+  <rect width="1600" height="900" fill="url(#g)"/><circle cx="800" cy="280" r="260" fill="#fff" opacity=".12" filter="url(#b)"/>
+  <g transform="translate(560,160)"><circle cx="0" cy="170" r="110" fill="#e9bea9"/><path d="M-115 170 Q-90 15 0 10 Q115 10 120 170 Q65 105 0 95 Q-60 130 -115 170Z" fill="#34283b"/><path d="M-170 690 Q0 350 170 690Z" fill="#34283b" opacity=".75"/></g>
+  <g transform="translate(1040,185)"><circle cx="0" cy="170" r="110" fill="#efc5b2"/><path d="M-115 170 Q-90 5 0 10 Q110 12 120 170 Q65 95 5 95 Q-65 120 -115 170Z" fill="#6b2f42"/><path d="M-170 690 Q0 350 170 690Z" fill="#6b2f42" opacity=".75"/></g>
+  <path d="M720 460 Q800 520 880 460" stroke="#fff" stroke-opacity=".35" stroke-width="8" fill="none"/>
+  <text x="90" y="760" fill="#fff" font-family="Georgia" font-size="72">Fora de Quadro</text><text x="94" y="815" fill="rgba(255,255,255,.65)" font-family="system-ui" font-size="20" letter-spacing="5">ENTRE NÓS: AURORA · MEMORY CG</text>
+  </svg>
