@@ -1,0 +1,2071 @@
+{
+  "schemaVersion": 3,
+  "title": "Entre Nós: Aurora",
+  "version": "3.0.0",
+  "characters": {
+    "vivi": {
+      "id": "vivi",
+      "name": "Vivi",
+      "shortBio": "Protagonista. Curiosa, teimosa e definida pelas escolhas do jogador.",
+      "accent": "#f59ab2",
+      "sheet": "/assets/characters/vivi-sheet.svg",
+      "expressions": [
+        "neutral",
+        "smile",
+        "serious",
+        "angry",
+        "blush",
+        "surprised"
+      ]
+    },
+    "gael": {
+      "id": "gael",
+      "name": "Gael",
+      "shortBio": "Fotógrafo do clube de artes. Sarcástico, observador e muito pior em esconder ciúmes do que imagina.",
+      "accent": "#b996ff",
+      "sheet": "/assets/characters/gael-sheet.svg",
+      "expressions": [
+        "neutral",
+        "smile",
+        "serious",
+        "angry",
+        "blush",
+        "surprised"
+      ]
+    },
+    "leon": {
+      "id": "leon",
+      "name": "Leon",
+      "shortBio": "Presidente do conselho estudantil. Organizado, exigente e secretamente gentil.",
+      "accent": "#8bbcff",
+      "sheet": "/assets/characters/leon-sheet.svg",
+      "expressions": [
+        "neutral",
+        "smile",
+        "serious",
+        "angry",
+        "blush",
+        "surprised"
+      ]
+    },
+    "ravi": {
+      "id": "ravi",
+      "name": "Ravi",
+      "shortBio": "Músico do campus. Irônico, espontâneo e mais sensível do que sua performance pública sugere.",
+      "accent": "#ffbb73",
+      "sheet": "/assets/characters/ravi-sheet.svg",
+      "expressions": [
+        "neutral",
+        "smile",
+        "serious",
+        "angry",
+        "blush",
+        "surprised"
+      ]
+    },
+    "maya": {
+      "id": "maya",
+      "name": "Maya",
+      "shortBio": "Melhor amiga de Vivi. Direta, leal e incapaz de respeitar um clima dramático por muito tempo.",
+      "accent": "#73e6c1",
+      "sheet": "/assets/characters/maya-sheet.svg",
+      "expressions": [
+        "neutral",
+        "smile",
+        "serious",
+        "angry",
+        "blush",
+        "surprised"
+      ]
+    },
+    "iris": {
+      "id": "iris",
+      "name": "Iris",
+      "shortBio": "Editora do jornal do campus e radar oficial de rumores.",
+      "accent": "#ff87d1",
+      "sheet": "/assets/characters/iris-sheet.svg",
+      "expressions": [
+        "neutral",
+        "smile",
+        "serious",
+        "angry",
+        "blush",
+        "surprised"
+      ]
+    }
+  },
+  "episodes": [
+    {
+      "id": "ep01",
+      "number": 1,
+      "title": "Primeiro Dia, Péssima Impressão",
+      "subtitle": "Aurora abre as portas",
+      "synopsis": "Vivi chega ao Instituto Aurora e descobre que três pessoas já têm motivos para irritá-la.",
+      "startNode": "start",
+      "cover": "/assets/backgrounds/campus.svg",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "narration",
+          "text": "Primeiro dia. Prédio novo, gente nova e uma certeza: eu não pisaria no próprio cadarço na frente de ninguém.",
+          "background": "/assets/backgrounds/campus.svg",
+          "next": "n1"
+        },
+        "n1": {
+          "id": "n1",
+          "type": "dialogue",
+          "speaker": "Gael",
+          "text": "Você está parada exatamente onde as pessoas precisam passar.",
+          "background": "/assets/backgrounds/campus.svg",
+          "character": "gael",
+          "expression": "neutral",
+          "position": "center",
+          "next": "n2"
+        },
+        "n2": {
+          "id": "n2",
+          "type": "dialogue",
+          "speaker": "{player}",
+          "text": "Bom dia pra você também. Seu crachá diz Gael ou 'fiscal de corredor'?",
+          "background": "/assets/backgrounds/campus.svg",
+          "character": "gael",
+          "expression": "smile",
+          "position": "center",
+          "next": "choice"
+        },
+        "choice": {
+          "id": "choice",
+          "type": "choice",
+          "text": "Como Vivi encerra a primeira discussão?",
+          "background": "/assets/backgrounds/campus.svg",
+          "character": "gael",
+          "expression": "serious",
+          "choices": [
+            {
+              "id": "e1a",
+              "label": "Peço desculpas, mas sem baixar a cabeça.",
+              "to": "afterA",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "gael",
+                  "amount": 3
+                },
+                {
+                  "type": "trait",
+                  "target": "empathy",
+                  "amount": 2
+                },
+                {
+                  "type": "currency",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "id": "e1b",
+              "label": "Provoco: 'vai me multar também?'",
+              "to": "afterB",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "gael",
+                  "amount": 2
+                },
+                {
+                  "type": "trait",
+                  "target": "humor",
+                  "amount": 3
+                },
+                {
+                  "type": "flag",
+                  "key": "gael_teased",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "e1c",
+              "label": "Passo por ele sem dar satisfação.",
+              "to": "afterC",
+              "effects": [
+                {
+                  "type": "trait",
+                  "target": "courage",
+                  "amount": 3
+                },
+                {
+                  "type": "flag",
+                  "key": "first_day_proud",
+                  "value": true
+                }
+              ]
+            }
+          ]
+        },
+        "afterA": {
+          "id": "afterA",
+          "type": "dialogue",
+          "speaker": "Gael",
+          "text": "Ok... talvez eu tenha julgado rápido demais.",
+          "background": "/assets/backgrounds/campus.svg",
+          "character": "gael",
+          "expression": "blush",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterB": {
+          "id": "afterB",
+          "type": "dialogue",
+          "speaker": "Gael",
+          "text": "Você sempre responde assim ou eu tive o privilégio?",
+          "background": "/assets/backgrounds/campus.svg",
+          "character": "gael",
+          "expression": "serious",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterC": {
+          "id": "afterC",
+          "type": "dialogue",
+          "speaker": "Gael",
+          "text": "Isso foi quase engraçado. Quase.",
+          "background": "/assets/backgrounds/campus.svg",
+          "character": "gael",
+          "expression": "surprised",
+          "position": "center",
+          "next": "bridge"
+        },
+        "bridge": {
+          "id": "bridge",
+          "type": "narration",
+          "text": "Quando Gael se afasta, um bilhete cai do caderno dele: 'Festival Aurora — não faltar'.",
+          "background": "/assets/backgrounds/campus.svg",
+          "next": "end"
+        },
+        "end": {
+          "id": "end",
+          "type": "end",
+          "text": "Algumas histórias começam com flores. A minha começou com uma discussão de corredor.",
+          "background": "/assets/backgrounds/campus.svg",
+          "endCard": "Fim do episódio 1"
+        }
+      }
+    },
+    {
+      "id": "ep02",
+      "number": 2,
+      "title": "Conselho de Guerra",
+      "subtitle": "Leon não gosta de improvisos",
+      "synopsis": "Um erro na lista de clubes coloca Vivi no centro de uma disputa do conselho estudantil.",
+      "startNode": "start",
+      "cover": "/assets/backgrounds/council.svg",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "narration",
+          "text": "A sala do conselho parecia organizada demais para um lugar cheio de adolescentes.",
+          "background": "/assets/backgrounds/council.svg",
+          "next": "n1"
+        },
+        "n1": {
+          "id": "n1",
+          "type": "dialogue",
+          "speaker": "Leon",
+          "text": "Seu nome está em três clubes ao mesmo tempo. Isso é impossível.",
+          "background": "/assets/backgrounds/council.svg",
+          "character": "leon",
+          "expression": "neutral",
+          "position": "center",
+          "next": "n2"
+        },
+        "n2": {
+          "id": "n2",
+          "type": "dialogue",
+          "speaker": "{player}",
+          "text": "Eu nem sabia que estava em um. Talvez o sistema goste de mim.",
+          "background": "/assets/backgrounds/council.svg",
+          "character": "leon",
+          "expression": "smile",
+          "position": "center",
+          "next": "choice"
+        },
+        "choice": {
+          "id": "choice",
+          "type": "choice",
+          "text": "O que Vivi faz com o erro?",
+          "background": "/assets/backgrounds/council.svg",
+          "character": "leon",
+          "expression": "serious",
+          "choices": [
+            {
+              "id": "e2a",
+              "label": "Assumo a investigação e protejo a caloura.",
+              "to": "afterA",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "leon",
+                  "amount": 4
+                },
+                {
+                  "type": "trait",
+                  "target": "empathy",
+                  "amount": 2
+                },
+                {
+                  "type": "flag",
+                  "key": "protected_freshman",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "e2b",
+              "label": "Faço Leon admitir que o sistema dele falhou.",
+              "to": "afterB",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "leon",
+                  "amount": 2
+                },
+                {
+                  "type": "trait",
+                  "target": "courage",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "id": "e2c",
+              "label": "Transformo a confusão em piada e desarmo a sala.",
+              "to": "afterC",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "leon",
+                  "amount": 2
+                },
+                {
+                  "type": "trait",
+                  "target": "humor",
+                  "amount": 3
+                }
+              ]
+            }
+          ]
+        },
+        "afterA": {
+          "id": "afterA",
+          "type": "dialogue",
+          "speaker": "Leon",
+          "text": "Resolver sem culpar ninguém seria... inesperadamente maduro.",
+          "background": "/assets/backgrounds/council.svg",
+          "character": "leon",
+          "expression": "blush",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterB": {
+          "id": "afterB",
+          "type": "dialogue",
+          "speaker": "Leon",
+          "text": "Se pretende bagunçar meu cronograma, ao menos seja eficiente.",
+          "background": "/assets/backgrounds/council.svg",
+          "character": "leon",
+          "expression": "serious",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterC": {
+          "id": "afterC",
+          "type": "dialogue",
+          "speaker": "Leon",
+          "text": "Você quer mesmo discutir regras comigo às sete da manhã?",
+          "background": "/assets/backgrounds/council.svg",
+          "character": "leon",
+          "expression": "surprised",
+          "position": "center",
+          "next": "bridge"
+        },
+        "bridge": {
+          "id": "bridge",
+          "type": "narration",
+          "text": "No fim, Vivi encontra a falha no cadastro e evita que uma caloura leve a culpa.",
+          "background": "/assets/backgrounds/council.svg",
+          "next": "end"
+        },
+        "end": {
+          "id": "end",
+          "type": "end",
+          "text": "Leon anotou meu nome numa agenda. Não sei se isso é bom ou ameaça formal.",
+          "background": "/assets/backgrounds/council.svg",
+          "endCard": "Fim do episódio 2"
+        }
+      }
+    },
+    {
+      "id": "ep03",
+      "number": 3,
+      "title": "Som Depois da Aula",
+      "subtitle": "Ravi transforma tudo em palco",
+      "synopsis": "Uma chuva prende Vivi no auditório justamente durante o ensaio secreto de Ravi.",
+      "startNode": "start",
+      "cover": "/assets/backgrounds/auditorium.svg",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "narration",
+          "text": "A chuva caiu tão forte que o auditório virou meu abrigo improvisado.",
+          "background": "/assets/backgrounds/auditorium.svg",
+          "next": "n1"
+        },
+        "n1": {
+          "id": "n1",
+          "type": "dialogue",
+          "speaker": "Ravi",
+          "text": "Se vai invadir meu ensaio, pelo menos promete não rir.",
+          "background": "/assets/backgrounds/auditorium.svg",
+          "character": "ravi",
+          "expression": "neutral",
+          "position": "center",
+          "next": "n2"
+        },
+        "n2": {
+          "id": "n2",
+          "type": "dialogue",
+          "speaker": "{player}",
+          "text": "Depende. Você vai cantar ou cometer um crime musical?",
+          "background": "/assets/backgrounds/auditorium.svg",
+          "character": "ravi",
+          "expression": "smile",
+          "position": "center",
+          "next": "choice"
+        },
+        "choice": {
+          "id": "choice",
+          "type": "choice",
+          "text": "Ravi pede uma opinião sincera.",
+          "background": "/assets/backgrounds/auditorium.svg",
+          "character": "ravi",
+          "expression": "serious",
+          "choices": [
+            {
+              "id": "e3a",
+              "label": "Digo exatamente onde a música me arrepiou.",
+              "to": "afterA",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "ravi",
+                  "amount": 4
+                },
+                {
+                  "type": "trait",
+                  "target": "empathy",
+                  "amount": 2
+                },
+                {
+                  "type": "unlockCg",
+                  "id": "cg-ravi-auditorium"
+                }
+              ]
+            },
+            {
+              "id": "e3b",
+              "label": "Aponto um defeito e proponho uma mudança.",
+              "to": "afterB",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "ravi",
+                  "amount": 3
+                },
+                {
+                  "type": "trait",
+                  "target": "courage",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "id": "e3c",
+              "label": "Digo que a pior parte foi ele achar que eu riria.",
+              "to": "afterC",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "ravi",
+                  "amount": 3
+                },
+                {
+                  "type": "trait",
+                  "target": "humor",
+                  "amount": 2
+                }
+              ]
+            }
+          ]
+        },
+        "afterA": {
+          "id": "afterA",
+          "type": "dialogue",
+          "speaker": "Ravi",
+          "text": "Isso foi... estranhamente gentil.",
+          "background": "/assets/backgrounds/auditorium.svg",
+          "character": "ravi",
+          "expression": "blush",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterB": {
+          "id": "afterB",
+          "type": "dialogue",
+          "speaker": "Ravi",
+          "text": "Eu sabia. A plateia de uma pessoa é sempre a mais cruel.",
+          "background": "/assets/backgrounds/auditorium.svg",
+          "character": "ravi",
+          "expression": "serious",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterC": {
+          "id": "afterC",
+          "type": "dialogue",
+          "speaker": "Ravi",
+          "text": "Espera. Você ficou mesmo até o final?",
+          "background": "/assets/backgrounds/auditorium.svg",
+          "character": "ravi",
+          "expression": "surprised",
+          "position": "center",
+          "next": "bridge"
+        },
+        "bridge": {
+          "id": "bridge",
+          "type": "narration",
+          "text": "A música termina e Ravi percebe que Vivi filmou apenas as luzes, não ele.",
+          "background": "/assets/backgrounds/auditorium.svg",
+          "next": "end"
+        },
+        "end": {
+          "id": "end",
+          "type": "end",
+          "text": "Ganhei uma música inédita e perdi o último ônibus. Negócio justo.",
+          "background": "/assets/backgrounds/auditorium.svg",
+          "endCard": "Fim do episódio 3"
+        }
+      }
+    },
+    {
+      "id": "ep04",
+      "number": 4,
+      "title": "Foto Fora de Quadro",
+      "subtitle": "Ciúme é uma palavra forte",
+      "synopsis": "Gael precisa de uma modelo para um trabalho e Ravi aparece na pior hora possível.",
+      "startNode": "start",
+      "cover": "/assets/backgrounds/studio.svg",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "narration",
+          "text": "O estúdio de fotografia estava vazio, exceto por Gael e uma câmera apontada para mim.",
+          "background": "/assets/backgrounds/studio.svg",
+          "next": "n1"
+        },
+        "n1": {
+          "id": "n1",
+          "type": "dialogue",
+          "speaker": "Gael",
+          "text": "Não olha pra lente. Olha pra mim.",
+          "background": "/assets/backgrounds/studio.svg",
+          "character": "gael",
+          "expression": "neutral",
+          "position": "center",
+          "next": "n2"
+        },
+        "n2": {
+          "id": "n2",
+          "type": "dialogue",
+          "speaker": "{player}",
+          "text": "Isso parece uma cantada ruim.",
+          "background": "/assets/backgrounds/studio.svg",
+          "character": "gael",
+          "expression": "smile",
+          "position": "center",
+          "next": "choice"
+        },
+        "choice": {
+          "id": "choice",
+          "type": "choice",
+          "text": "Ravi pergunta se Vivi quer sair depois.",
+          "background": "/assets/backgrounds/studio.svg",
+          "character": "gael",
+          "expression": "serious",
+          "choices": [
+            {
+              "id": "e4a",
+              "label": "Aceito, mas convido Gael também.",
+              "to": "afterA",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "gael",
+                  "amount": 3
+                },
+                {
+                  "type": "affinity",
+                  "target": "ravi",
+                  "amount": 2
+                },
+                {
+                  "type": "trait",
+                  "target": "empathy",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "id": "e4b",
+              "label": "Recuso e fico para ver as fotos com Gael.",
+              "to": "afterB",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "gael",
+                  "amount": 5
+                },
+                {
+                  "type": "flag",
+                  "key": "gael_studio_close",
+                  "value": true
+                },
+                {
+                  "type": "unlockCg",
+                  "id": "cg-gael-studio"
+                }
+              ]
+            },
+            {
+              "id": "e4c",
+              "label": "Provoco Gael perguntando se ele está com ciúme.",
+              "to": "afterC",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "gael",
+                  "amount": 4
+                },
+                {
+                  "type": "trait",
+                  "target": "humor",
+                  "amount": 2
+                },
+                {
+                  "type": "flag",
+                  "key": "gael_jealous_called_out",
+                  "value": true
+                }
+              ]
+            }
+          ]
+        },
+        "afterA": {
+          "id": "afterA",
+          "type": "dialogue",
+          "speaker": "Gael",
+          "text": "Fica assim. Não se mexe.",
+          "background": "/assets/backgrounds/studio.svg",
+          "character": "gael",
+          "expression": "blush",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterB": {
+          "id": "afterB",
+          "type": "dialogue",
+          "speaker": "Gael",
+          "text": "Ravi não precisava ter entrado justamente agora.",
+          "background": "/assets/backgrounds/studio.svg",
+          "character": "gael",
+          "expression": "serious",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterC": {
+          "id": "afterC",
+          "type": "dialogue",
+          "speaker": "Gael",
+          "text": "Você está se divertindo com isso, né?",
+          "background": "/assets/backgrounds/studio.svg",
+          "character": "gael",
+          "expression": "surprised",
+          "position": "center",
+          "next": "bridge"
+        },
+        "bridge": {
+          "id": "bridge",
+          "type": "narration",
+          "text": "Quando Ravi oferece ajudar, Gael responde antes que Vivi consiga abrir a boca.",
+          "background": "/assets/backgrounds/studio.svg",
+          "next": "end"
+        },
+        "end": {
+          "id": "end",
+          "type": "end",
+          "text": "A foto ficou perfeita. O clima entre os dois, nem um pouco.",
+          "background": "/assets/backgrounds/studio.svg",
+          "endCard": "Fim do episódio 4"
+        }
+      }
+    },
+    {
+      "id": "ep05",
+      "number": 5,
+      "title": "Plano Perfeito, Quase",
+      "subtitle": "Leon perde o controle do roteiro",
+      "synopsis": "A organização do Festival Aurora entra em crise e Vivi precisa escolher entre obedecer e improvisar.",
+      "startNode": "start",
+      "cover": "/assets/backgrounds/festival-day.svg",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "narration",
+          "text": "Faltavam vinte minutos para abrir os portões e metade das luzes não funcionava.",
+          "background": "/assets/backgrounds/festival-day.svg",
+          "next": "n1"
+        },
+        "n1": {
+          "id": "n1",
+          "type": "dialogue",
+          "speaker": "Leon",
+          "text": "Não muda nada sem me avisar.",
+          "background": "/assets/backgrounds/festival-day.svg",
+          "character": "leon",
+          "expression": "neutral",
+          "position": "center",
+          "next": "n2"
+        },
+        "n2": {
+          "id": "n2",
+          "type": "dialogue",
+          "speaker": "{player}",
+          "text": "Leon, seu plano perfeito acabou de pegar fogo. Literalmente.",
+          "background": "/assets/backgrounds/festival-day.svg",
+          "character": "leon",
+          "expression": "smile",
+          "position": "center",
+          "next": "choice"
+        },
+        "choice": {
+          "id": "choice",
+          "type": "choice",
+          "text": "Qual é a prioridade?",
+          "background": "/assets/backgrounds/festival-day.svg",
+          "character": "leon",
+          "expression": "serious",
+          "choices": [
+            {
+              "id": "e5a",
+              "label": "Protejo os voluntários e simplifico a abertura.",
+              "to": "afterA",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "leon",
+                  "amount": 5
+                },
+                {
+                  "type": "trait",
+                  "target": "empathy",
+                  "amount": 3
+                },
+                {
+                  "type": "unlockCg",
+                  "id": "cg-leon-festival"
+                }
+              ]
+            },
+            {
+              "id": "e5b",
+              "label": "Assumo o microfone e improviso ao vivo.",
+              "to": "afterB",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "leon",
+                  "amount": 3
+                },
+                {
+                  "type": "trait",
+                  "target": "courage",
+                  "amount": 4
+                }
+              ]
+            },
+            {
+              "id": "e5c",
+              "label": "Faço o público achar que o atraso fazia parte do show.",
+              "to": "afterC",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "leon",
+                  "amount": 3
+                },
+                {
+                  "type": "trait",
+                  "target": "humor",
+                  "amount": 4
+                }
+              ]
+            }
+          ]
+        },
+        "afterA": {
+          "id": "afterA",
+          "type": "dialogue",
+          "speaker": "Leon",
+          "text": "Você salvou a abertura. Eu sei reconhecer quando alguém está certo.",
+          "background": "/assets/backgrounds/festival-day.svg",
+          "character": "leon",
+          "expression": "blush",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterB": {
+          "id": "afterB",
+          "type": "dialogue",
+          "speaker": "Leon",
+          "text": "Improvisar não é a mesma coisa que resolver.",
+          "background": "/assets/backgrounds/festival-day.svg",
+          "character": "leon",
+          "expression": "serious",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterC": {
+          "id": "afterC",
+          "type": "dialogue",
+          "speaker": "Leon",
+          "text": "Eu não vou esquecer isso. Ainda não decidi se é ameaça ou agradecimento.",
+          "background": "/assets/backgrounds/festival-day.svg",
+          "character": "leon",
+          "expression": "surprised",
+          "position": "center",
+          "next": "bridge"
+        },
+        "bridge": {
+          "id": "bridge",
+          "type": "narration",
+          "text": "Vivi reorganiza as equipes e o festival abre com apenas três minutos de atraso.",
+          "background": "/assets/backgrounds/festival-day.svg",
+          "next": "end"
+        },
+        "end": {
+          "id": "end",
+          "type": "end",
+          "text": "Leon sorriu por dois segundos. Tenho quase certeza de que ninguém mais viu.",
+          "background": "/assets/backgrounds/festival-day.svg",
+          "endCard": "Fim do episódio 5"
+        }
+      }
+    },
+    {
+      "id": "ep06",
+      "number": 6,
+      "title": "A Noite das Lanternas",
+      "subtitle": "Todo mundo percebe antes deles",
+      "synopsis": "No coração do festival, os três garotos disputam sem admitir a atenção de Vivi.",
+      "startNode": "start",
+      "cover": "/assets/backgrounds/festival-night.svg",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "narration",
+          "text": "À noite, o campus parecia outra cidade: lanternas, música e gente demais.",
+          "background": "/assets/backgrounds/festival-night.svg",
+          "next": "n1"
+        },
+        "n1": {
+          "id": "n1",
+          "type": "dialogue",
+          "speaker": "Ravi",
+          "text": "Você prometeu me dar uma dança.",
+          "background": "/assets/backgrounds/festival-night.svg",
+          "character": "ravi",
+          "expression": "neutral",
+          "position": "center",
+          "next": "n2"
+        },
+        "n2": {
+          "id": "n2",
+          "type": "dialogue",
+          "speaker": "{player}",
+          "text": "Eu prometi ouvir uma música. Você adicionou a dança sozinho.",
+          "background": "/assets/backgrounds/festival-night.svg",
+          "character": "ravi",
+          "expression": "smile",
+          "position": "center",
+          "next": "choice"
+        },
+        "choice": {
+          "id": "choice",
+          "type": "choice",
+          "text": "Quem recebe o primeiro momento da noite?",
+          "background": "/assets/backgrounds/festival-night.svg",
+          "character": "ravi",
+          "expression": "serious",
+          "choices": [
+            {
+              "id": "e6a",
+              "label": "Danço com Ravi.",
+              "to": "afterA",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "ravi",
+                  "amount": 5
+                },
+                {
+                  "type": "unlockCg",
+                  "id": "cg-ravi-lanterns"
+                },
+                {
+                  "type": "flag",
+                  "key": "festival_danced_ravi",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "e6b",
+              "label": "Vou ajudar Leon antes da dança.",
+              "to": "afterB",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "leon",
+                  "amount": 4
+                },
+                {
+                  "type": "flag",
+                  "key": "festival_helped_leon",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "e6c",
+              "label": "Peço para Gael tirar uma foto comigo.",
+              "to": "afterC",
+              "effects": [
+                {
+                  "type": "affinity",
+                  "target": "gael",
+                  "amount": 4
+                },
+                {
+                  "type": "flag",
+                  "key": "festival_photo_gael",
+                  "value": true
+                }
+              ]
+            }
+          ]
+        },
+        "afterA": {
+          "id": "afterA",
+          "type": "dialogue",
+          "speaker": "Ravi",
+          "text": "Então eu vou pedir direito desta vez.",
+          "background": "/assets/backgrounds/festival-night.svg",
+          "character": "ravi",
+          "expression": "blush",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterB": {
+          "id": "afterB",
+          "type": "dialogue",
+          "speaker": "Ravi",
+          "text": "Se disser não, vou fingir que não destruiu meu ego.",
+          "background": "/assets/backgrounds/festival-night.svg",
+          "character": "ravi",
+          "expression": "serious",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterC": {
+          "id": "afterC",
+          "type": "dialogue",
+          "speaker": "Ravi",
+          "text": "Olha pra mim e diz que não quer.",
+          "background": "/assets/backgrounds/festival-night.svg",
+          "character": "ravi",
+          "expression": "surprised",
+          "position": "center",
+          "next": "bridge"
+        },
+        "bridge": {
+          "id": "bridge",
+          "type": "narration",
+          "text": "Do outro lado da praça, Gael abaixa a câmera. Leon fecha a agenda sem terminar a frase.",
+          "background": "/assets/backgrounds/festival-night.svg",
+          "next": "end"
+        },
+        "end": {
+          "id": "end",
+          "type": "end",
+          "text": "Uma dança dura três minutos. As consequências, aparentemente, muito mais.",
+          "background": "/assets/backgrounds/festival-night.svg",
+          "endCard": "Fim do episódio 6"
+        }
+      }
+    },
+    {
+      "id": "ep07",
+      "number": 7,
+      "title": "Sem Volta",
+      "subtitle": "O coração escolhe direção",
+      "synopsis": "Rumores do festival obrigam Vivi a encarar o que vinha evitando.",
+      "startNode": "start",
+      "cover": "/assets/backgrounds/rooftop.svg",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "narration",
+          "text": "O telhado virou o único lugar onde ninguém perguntava com quem eu estava saindo.",
+          "background": "/assets/backgrounds/rooftop.svg",
+          "next": "n1"
+        },
+        "n1": {
+          "id": "n1",
+          "type": "dialogue",
+          "speaker": "Maya",
+          "text": "Você pode continuar fingindo que isso não existe. Só não vai fazer desaparecer.",
+          "background": "/assets/backgrounds/rooftop.svg",
+          "character": "maya",
+          "expression": "neutral",
+          "position": "center",
+          "next": "n2"
+        },
+        "n2": {
+          "id": "n2",
+          "type": "dialogue",
+          "speaker": "{player}",
+          "text": "Obrigada pelo carinho brutal, Maya.",
+          "background": "/assets/backgrounds/rooftop.svg",
+          "character": "maya",
+          "expression": "smile",
+          "position": "center",
+          "next": "choice"
+        },
+        "choice": {
+          "id": "choice",
+          "type": "choice",
+          "text": "Quem Vivi procura?",
+          "background": "/assets/backgrounds/rooftop.svg",
+          "character": "maya",
+          "expression": "serious",
+          "choices": [
+            {
+              "id": "route-gael",
+              "label": "Gael — quero entender o que existe entre nós.",
+              "to": "afterA",
+              "conditions": [
+                {
+                  "kind": "affinity",
+                  "key": "gael",
+                  "op": ">=",
+                  "value": 8
+                }
+              ],
+              "effects": [
+                {
+                  "type": "route",
+                  "value": "gael"
+                },
+                {
+                  "type": "achievement",
+                  "id": "route-gael"
+                },
+                {
+                  "type": "message",
+                  "threadId": "gael",
+                  "from": "Gael",
+                  "text": "Você disse que queria conversar. Estou no estúdio."
+                }
+              ]
+            },
+            {
+              "id": "route-leon",
+              "label": "Leon — chega de esconder atrás de regras.",
+              "to": "afterB",
+              "conditions": [
+                {
+                  "kind": "affinity",
+                  "key": "leon",
+                  "op": ">=",
+                  "value": 8
+                }
+              ],
+              "effects": [
+                {
+                  "type": "route",
+                  "value": "leon"
+                },
+                {
+                  "type": "achievement",
+                  "id": "route-leon"
+                },
+                {
+                  "type": "message",
+                  "threadId": "leon",
+                  "from": "Leon",
+                  "text": "Sala do conselho. Quando estiver pronta."
+                }
+              ]
+            },
+            {
+              "id": "route-ravi",
+              "label": "Ravi — eu quero ouvir a resposta sem música.",
+              "to": "afterC",
+              "conditions": [
+                {
+                  "kind": "affinity",
+                  "key": "ravi",
+                  "op": ">=",
+                  "value": 8
+                }
+              ],
+              "effects": [
+                {
+                  "type": "route",
+                  "value": "ravi"
+                },
+                {
+                  "type": "achievement",
+                  "id": "route-ravi"
+                },
+                {
+                  "type": "message",
+                  "threadId": "ravi",
+                  "from": "Ravi",
+                  "text": "Sem palco. Sem plateia. Só vem."
+                }
+              ]
+            },
+            {
+              "id": "route-independent",
+              "label": "Ninguém. Primeiro eu preciso escolher a mim mesma.",
+              "to": "afterC",
+              "effects": [
+                {
+                  "type": "route",
+                  "value": "independent"
+                },
+                {
+                  "type": "trait",
+                  "target": "courage",
+                  "amount": 4
+                },
+                {
+                  "type": "achievement",
+                  "id": "route-independent"
+                }
+              ]
+            }
+          ]
+        },
+        "afterA": {
+          "id": "afterA",
+          "type": "dialogue",
+          "speaker": "Maya",
+          "text": "Então vai. Escolhe com coragem, não por pressão.",
+          "background": "/assets/backgrounds/rooftop.svg",
+          "character": "maya",
+          "expression": "blush",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterB": {
+          "id": "afterB",
+          "type": "dialogue",
+          "speaker": "Maya",
+          "text": "Não escolher também é escolher.",
+          "background": "/assets/backgrounds/rooftop.svg",
+          "character": "maya",
+          "expression": "serious",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterC": {
+          "id": "afterC",
+          "type": "dialogue",
+          "speaker": "Maya",
+          "text": "Se der errado, eu tenho sorvete e um álibi.",
+          "background": "/assets/backgrounds/rooftop.svg",
+          "character": "maya",
+          "expression": "surprised",
+          "position": "center",
+          "next": "bridge"
+        },
+        "bridge": {
+          "id": "bridge",
+          "type": "narration",
+          "text": "Vivi respira fundo e decide qual conversa não pode mais adiar.",
+          "background": "/assets/backgrounds/rooftop.svg",
+          "next": "end"
+        },
+        "end": {
+          "id": "end",
+          "type": "end",
+          "text": "Depois daquela noite, alguma coisa mudou de nome.",
+          "background": "/assets/backgrounds/rooftop.svg",
+          "endCard": "Fim do episódio 7"
+        }
+      }
+    },
+    {
+      "id": "ep08",
+      "number": 8,
+      "title": "Depois do Sim",
+      "subtitle": "Intimidade também assusta",
+      "synopsis": "A nova proximidade transforma pequenos gestos em grandes decisões.",
+      "startNode": "start",
+      "cover": "/assets/backgrounds/cafe.svg",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "narration",
+          "text": "A cafeteria estava quase vazia. Pela primeira vez, silêncio não parecia desconfortável.",
+          "background": "/assets/backgrounds/cafe.svg",
+          "next": "n1"
+        },
+        "n1": {
+          "id": "n1",
+          "type": "dialogue",
+          "speaker": "Gael",
+          "text": "Você está me encarando.",
+          "background": "/assets/backgrounds/cafe.svg",
+          "character": "gael",
+          "expression": "neutral",
+          "position": "center",
+          "next": "n2"
+        },
+        "n2": {
+          "id": "n2",
+          "type": "dialogue",
+          "speaker": "{player}",
+          "text": "Estou tentando descobrir quando você parou de ser insuportável.",
+          "background": "/assets/backgrounds/cafe.svg",
+          "character": "gael",
+          "expression": "smile",
+          "position": "center",
+          "next": "choice"
+        },
+        "choice": {
+          "id": "choice",
+          "type": "choice",
+          "text": "Como Vivi responde à vulnerabilidade?",
+          "background": "/assets/backgrounds/cafe.svg",
+          "character": "gael",
+          "expression": "serious",
+          "choices": [
+            {
+              "id": "e8a",
+              "label": "Respondo com honestidade, mesmo sem ter certeza.",
+              "to": "afterA",
+              "effects": [
+                {
+                  "type": "trait",
+                  "target": "empathy",
+                  "amount": 3
+                },
+                {
+                  "type": "currency",
+                  "amount": 60
+                },
+                {
+                  "type": "unlockCg",
+                  "id": "cg-route-confession"
+                }
+              ]
+            },
+            {
+              "id": "e8b",
+              "label": "Peço tempo, mas não fujo da conversa.",
+              "to": "afterB",
+              "effects": [
+                {
+                  "type": "trait",
+                  "target": "courage",
+                  "amount": 3
+                },
+                {
+                  "type": "flag",
+                  "key": "asked_for_time",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "e8c",
+              "label": "Quebro a tensão com uma piada e depois falo sério.",
+              "to": "afterC",
+              "effects": [
+                {
+                  "type": "trait",
+                  "target": "humor",
+                  "amount": 3
+                },
+                {
+                  "type": "flag",
+                  "key": "softened_confession",
+                  "value": true
+                }
+              ]
+            }
+          ]
+        },
+        "afterA": {
+          "id": "afterA",
+          "type": "dialogue",
+          "speaker": "Gael",
+          "text": "Não espalha. Tenho reputação.",
+          "background": "/assets/backgrounds/cafe.svg",
+          "character": "gael",
+          "expression": "blush",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterB": {
+          "id": "afterB",
+          "type": "dialogue",
+          "speaker": "Gael",
+          "text": "Eu não sei fazer isso do jeito fácil.",
+          "background": "/assets/backgrounds/cafe.svg",
+          "character": "gael",
+          "expression": "serious",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterC": {
+          "id": "afterC",
+          "type": "dialogue",
+          "speaker": "Gael",
+          "text": "Mas quero tentar do meu jeito. Se você deixar.",
+          "background": "/assets/backgrounds/cafe.svg",
+          "character": "gael",
+          "expression": "surprised",
+          "position": "center",
+          "next": "bridge"
+        },
+        "bridge": {
+          "id": "bridge",
+          "type": "narration",
+          "text": "Independentemente da rota, Vivi percebe que romance não resolve inseguranças; só as torna impossíveis de ignorar.",
+          "background": "/assets/backgrounds/cafe.svg",
+          "next": "end"
+        },
+        "end": {
+          "id": "end",
+          "type": "end",
+          "text": "Gostar de alguém era menos uma resposta e mais uma nova pergunta.",
+          "background": "/assets/backgrounds/cafe.svg",
+          "endCard": "Fim do episódio 8"
+        }
+      }
+    },
+    {
+      "id": "ep09",
+      "number": 9,
+      "title": "O Que Não Foi Dito",
+      "subtitle": "Conflito de verdade não cabe numa escolha perfeita",
+      "synopsis": "Uma oportunidade fora da cidade força todos a discutir futuro, distância e medo.",
+      "startNode": "start",
+      "cover": "/assets/backgrounds/station.svg",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "narration",
+          "text": "O e-mail chegou às 06:12: bolsa de três meses em outra cidade.",
+          "background": "/assets/backgrounds/station.svg",
+          "next": "n1"
+        },
+        "n1": {
+          "id": "n1",
+          "type": "dialogue",
+          "speaker": "Leon",
+          "text": "Você vai aceitar?",
+          "background": "/assets/backgrounds/station.svg",
+          "character": "leon",
+          "expression": "neutral",
+          "position": "center",
+          "next": "n2"
+        },
+        "n2": {
+          "id": "n2",
+          "type": "dialogue",
+          "speaker": "{player}",
+          "text": "Eu ainda não sei.",
+          "background": "/assets/backgrounds/station.svg",
+          "character": "leon",
+          "expression": "smile",
+          "position": "center",
+          "next": "choice"
+        },
+        "choice": {
+          "id": "choice",
+          "type": "choice",
+          "text": "O que Vivi decide sobre a bolsa?",
+          "background": "/assets/backgrounds/station.svg",
+          "character": "leon",
+          "expression": "serious",
+          "choices": [
+            {
+              "id": "e9a",
+              "label": "Aceito. Se for real, a distância não apaga.",
+              "to": "afterA",
+              "effects": [
+                {
+                  "type": "trait",
+                  "target": "courage",
+                  "amount": 5
+                },
+                {
+                  "type": "flag",
+                  "key": "accepted_scholarship",
+                  "value": true
+                },
+                {
+                  "type": "achievement",
+                  "id": "chose-growth"
+                }
+              ]
+            },
+            {
+              "id": "e9b",
+              "label": "Recuso porque meu projeto aqui também importa.",
+              "to": "afterB",
+              "effects": [
+                {
+                  "type": "trait",
+                  "target": "empathy",
+                  "amount": 3
+                },
+                {
+                  "type": "flag",
+                  "key": "stayed_for_project",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "e9c",
+              "label": "Peço 48 horas e converso com todos antes.",
+              "to": "afterC",
+              "effects": [
+                {
+                  "type": "trait",
+                  "target": "humor",
+                  "amount": 1
+                },
+                {
+                  "type": "trait",
+                  "target": "empathy",
+                  "amount": 2
+                },
+                {
+                  "type": "flag",
+                  "key": "delayed_scholarship",
+                  "value": true
+                }
+              ]
+            }
+          ]
+        },
+        "afterA": {
+          "id": "afterA",
+          "type": "dialogue",
+          "speaker": "Leon",
+          "text": "Então não responde pensando no que eu quero.",
+          "background": "/assets/backgrounds/station.svg",
+          "character": "leon",
+          "expression": "blush",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterB": {
+          "id": "afterB",
+          "type": "dialogue",
+          "speaker": "Leon",
+          "text": "Ficar por alguém também pode virar ressentimento.",
+          "background": "/assets/backgrounds/station.svg",
+          "character": "leon",
+          "expression": "serious",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterC": {
+          "id": "afterC",
+          "type": "dialogue",
+          "speaker": "Leon",
+          "text": "Eu prefiro sentir saudade do que ser a razão de você desistir.",
+          "background": "/assets/backgrounds/station.svg",
+          "character": "leon",
+          "expression": "surprised",
+          "position": "center",
+          "next": "bridge"
+        },
+        "bridge": {
+          "id": "bridge",
+          "type": "narration",
+          "text": "Pela primeira vez, ninguém oferece solução. Só espaço para Vivi decidir.",
+          "background": "/assets/backgrounds/station.svg",
+          "next": "end"
+        },
+        "end": {
+          "id": "end",
+          "type": "end",
+          "text": "Amor adulto talvez começasse exatamente onde terminavam as promessas fáceis.",
+          "background": "/assets/backgrounds/station.svg",
+          "endCard": "Fim do episódio 9"
+        }
+      }
+    },
+    {
+      "id": "ep10",
+      "number": 10,
+      "title": "Aurora",
+      "subtitle": "Final de temporada",
+      "synopsis": "Meses depois, Vivi volta ao ponto onde tudo começou e escolhe que futuro quer levar consigo.",
+      "startNode": "start",
+      "cover": "/assets/backgrounds/sunrise.svg",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "narration",
+          "text": "O campus amanheceu dourado no último dia do semestre.",
+          "background": "/assets/backgrounds/sunrise.svg",
+          "next": "n1"
+        },
+        "n1": {
+          "id": "n1",
+          "type": "dialogue",
+          "speaker": "Maya",
+          "text": "Você percebeu que está exatamente no corredor onde brigou com Gael no primeiro dia?",
+          "background": "/assets/backgrounds/sunrise.svg",
+          "character": "maya",
+          "expression": "neutral",
+          "position": "center",
+          "next": "n2"
+        },
+        "n2": {
+          "id": "n2",
+          "type": "dialogue",
+          "speaker": "{player}",
+          "text": "Não estraga meu momento cinematográfico.",
+          "background": "/assets/backgrounds/sunrise.svg",
+          "character": "maya",
+          "expression": "smile",
+          "position": "center",
+          "next": "choice"
+        },
+        "choice": {
+          "id": "choice",
+          "type": "choice",
+          "text": "Como Vivi define esse capítulo da vida?",
+          "background": "/assets/backgrounds/sunrise.svg",
+          "character": "maya",
+          "expression": "serious",
+          "choices": [
+            {
+              "id": "e10a",
+              "label": "Foi uma história de amor.",
+              "to": "afterA",
+              "effects": [
+                {
+                  "type": "unlockCg",
+                  "id": "cg-finale-romance"
+                },
+                {
+                  "type": "achievement",
+                  "id": "season-one-complete"
+                },
+                {
+                  "type": "currency",
+                  "amount": 300
+                }
+              ]
+            },
+            {
+              "id": "e10b",
+              "label": "Foi uma história sobre aprender a escolher.",
+              "to": "afterB",
+              "effects": [
+                {
+                  "type": "unlockCg",
+                  "id": "cg-finale-growth"
+                },
+                {
+                  "type": "achievement",
+                  "id": "season-one-complete"
+                },
+                {
+                  "type": "trait",
+                  "target": "courage",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "id": "e10c",
+              "label": "Foi só o começo.",
+              "to": "afterC",
+              "effects": [
+                {
+                  "type": "unlockCg",
+                  "id": "cg-finale-aurora"
+                },
+                {
+                  "type": "achievement",
+                  "id": "season-one-complete"
+                },
+                {
+                  "type": "currency",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        },
+        "afterA": {
+          "id": "afterA",
+          "type": "dialogue",
+          "speaker": "Maya",
+          "text": "Você fez escolhas ruins, boas e algumas muito engraçadas.",
+          "background": "/assets/backgrounds/sunrise.svg",
+          "character": "maya",
+          "expression": "blush",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterB": {
+          "id": "afterB",
+          "type": "dialogue",
+          "speaker": "Maya",
+          "text": "Mas foram suas.",
+          "background": "/assets/backgrounds/sunrise.svg",
+          "character": "maya",
+          "expression": "serious",
+          "position": "center",
+          "next": "bridge"
+        },
+        "afterC": {
+          "id": "afterC",
+          "type": "dialogue",
+          "speaker": "Maya",
+          "text": "E isso vale mais do que qualquer final perfeito.",
+          "background": "/assets/backgrounds/sunrise.svg",
+          "character": "maya",
+          "expression": "surprised",
+          "position": "center",
+          "next": "bridge"
+        },
+        "bridge": {
+          "id": "bridge",
+          "type": "narration",
+          "text": "Uma mensagem chega no celular. O nome na tela depende de tudo o que veio antes.",
+          "background": "/assets/backgrounds/sunrise.svg",
+          "next": "end"
+        },
+        "end": {
+          "id": "end",
+          "type": "end",
+          "text": "Fim da primeira temporada — mas não da história de Vivi.",
+          "background": "/assets/backgrounds/sunrise.svg",
+          "endCard": "Fim do episódio 10"
+        }
+      }
+    }
+  ],
+  "threads": [
+    {
+      "id": "gael",
+      "characterId": "gael",
+      "displayName": "Gael",
+      "initial": [
+        {
+          "id": "g0",
+          "from": "Gael",
+          "text": "Você esqueceu uma caneta no estúdio. Não, eu não roubei.",
+          "at": "Dia 1"
+        }
+      ]
+    },
+    {
+      "id": "leon",
+      "characterId": "leon",
+      "displayName": "Leon",
+      "initial": [
+        {
+          "id": "l0",
+          "from": "Leon",
+          "text": "Confirme se recebeu o cronograma. Desta vez leia até o fim.",
+          "at": "Dia 2"
+        }
+      ]
+    },
+    {
+      "id": "ravi",
+      "characterId": "ravi",
+      "displayName": "Ravi",
+      "initial": [
+        {
+          "id": "r0",
+          "from": "Ravi",
+          "text": "Tenho uma demo nova. Sem julgamentos por 24h.",
+          "at": "Dia 3"
+        }
+      ]
+    },
+    {
+      "id": "maya",
+      "characterId": "maya",
+      "displayName": "Maya",
+      "initial": [
+        {
+          "id": "m0",
+          "from": "Maya",
+          "text": "Se você começar a namorar antes de me contar, eu termino a amizade por 7 minutos.",
+          "at": "Hoje"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "id": "campus",
+      "name": "Campus Aurora",
+      "description": "Corredores, clubes e encontros que fingem ser coincidência.",
+      "icon": "🎓",
+      "background": "/assets/backgrounds/campus.svg",
+      "reward": [
+        {
+          "type": "currency",
+          "amount": 15
+        }
+      ],
+      "oncePerDay": true
+    },
+    {
+      "id": "cafe",
+      "name": "Café Boreal",
+      "description": "Café forte, fofoca mais forte ainda.",
+      "icon": "☕",
+      "background": "/assets/backgrounds/cafe.svg",
+      "reward": [
+        {
+          "type": "trait",
+          "target": "empathy",
+          "amount": 1
+        }
+      ],
+      "oncePerDay": true
+    },
+    {
+      "id": "studio",
+      "name": "Estúdio de Artes",
+      "description": "Território de Gael, câmeras e silêncios suspeitos.",
+      "icon": "📷",
+      "background": "/assets/backgrounds/studio.svg",
+      "reward": [
+        {
+          "type": "affinity",
+          "target": "gael",
+          "amount": 1
+        }
+      ],
+      "oncePerDay": true
+    },
+    {
+      "id": "council",
+      "name": "Conselho",
+      "description": "Planilhas, regras e Leon fingindo que não esperava você.",
+      "icon": "📋",
+      "background": "/assets/backgrounds/council.svg",
+      "reward": [
+        {
+          "type": "affinity",
+          "target": "leon",
+          "amount": 1
+        }
+      ],
+      "oncePerDay": true
+    },
+    {
+      "id": "auditorium",
+      "name": "Auditório",
+      "description": "Ensaios, luz baixa e Ravi testando músicas incompletas.",
+      "icon": "🎸",
+      "background": "/assets/backgrounds/auditorium.svg",
+      "reward": [
+        {
+          "type": "affinity",
+          "target": "ravi",
+          "amount": 1
+        }
+      ],
+      "oncePerDay": true
+    },
+    {
+      "id": "park",
+      "name": "Parque das Lanternas",
+      "description": "Bom para pensar. Péssimo para evitar encontros românticos.",
+      "icon": "🌙",
+      "background": "/assets/backgrounds/park.svg",
+      "reward": [
+        {
+          "type": "currency",
+          "amount": 20
+        }
+      ],
+      "oncePerDay": true
+    }
+  ],
+  "cgs": [
+    {
+      "id": "cg-ravi-auditorium",
+      "title": "Uma Plateia de Uma Pessoa",
+      "description": "Ravi toca a demo apenas para Vivi.",
+      "src": "/assets/cg/ravi-auditorium.svg",
+      "route": "ravi"
+    },
+    {
+      "id": "cg-gael-studio",
+      "title": "Fora de Quadro",
+      "description": "Gael abaixa a câmera por um segundo.",
+      "src": "/assets/cg/gael-studio.svg",
+      "route": "gael"
+    },
+    {
+      "id": "cg-leon-festival",
+      "title": "Três Minutos Atrasados",
+      "description": "Leon finalmente relaxa depois da abertura.",
+      "src": "/assets/cg/leon-festival.svg",
+      "route": "leon"
+    },
+    {
+      "id": "cg-ravi-lanterns",
+      "title": "Dança das Lanternas",
+      "description": "Uma dança no centro do festival.",
+      "src": "/assets/cg/ravi-lanterns.svg",
+      "route": "ravi"
+    },
+    {
+      "id": "cg-route-confession",
+      "title": "Sem Roteiro",
+      "description": "A primeira conversa realmente honesta.",
+      "src": "/assets/cg/route-confession.svg",
+      "route": "general"
+    },
+    {
+      "id": "cg-finale-romance",
+      "title": "Aurora — Romance",
+      "description": "Um final construído a dois.",
+      "src": "/assets/cg/finale-romance.svg",
+      "route": "general"
+    },
+    {
+      "id": "cg-finale-growth",
+      "title": "Aurora — Crescer",
+      "description": "Vivi escolhe o próprio horizonte.",
+      "src": "/assets/cg/finale-growth.svg",
+      "route": "general"
+    },
+    {
+      "id": "cg-finale-aurora",
+      "title": "Aurora — O Começo",
+      "description": "O último quadro da primeira temporada.",
+      "src": "/assets/cg/finale-aurora.svg",
+      "route": "general"
+    }
+  ],
+  "outfits": [
+    {
+      "id": "casual-aurora",
+      "name": "Casual Aurora",
+      "description": "Jaqueta clara, saia escura e tênis.",
+      "price": 0,
+      "preview": "🌸",
+      "rarity": "common"
+    },
+    {
+      "id": "campus-smart",
+      "name": "Campus Smart",
+      "description": "Visual arrumado para dias de reunião.",
+      "price": 120,
+      "preview": "📚",
+      "rarity": "common"
+    },
+    {
+      "id": "photo-day",
+      "name": "Photo Day",
+      "description": "Camadas neutras e acessórios discretos.",
+      "price": 180,
+      "preview": "📷",
+      "rarity": "rare"
+    },
+    {
+      "id": "lantern-night",
+      "name": "Noite das Lanternas",
+      "description": "Vestido vinho com detalhes dourados.",
+      "price": 300,
+      "preview": "🏮",
+      "rarity": "epic"
+    },
+    {
+      "id": "boreal-knit",
+      "name": "Boreal Knit",
+      "description": "Tricô macio para tardes no café.",
+      "price": 150,
+      "preview": "☕",
+      "rarity": "common"
+    },
+    {
+      "id": "stage-light",
+      "name": "Stage Light",
+      "description": "Look preto com brilho sutil.",
+      "price": 240,
+      "preview": "🎤",
+      "rarity": "rare"
+    },
+    {
+      "id": "student-council",
+      "name": "Formal Aurora",
+      "description": "Alfaiataria moderna e broche do instituto.",
+      "price": 260,
+      "preview": "🪪",
+      "rarity": "rare"
+    },
+    {
+      "id": "sunrise",
+      "name": "Sunrise",
+      "description": "Branco, pêssego e detalhes translúcidos.",
+      "price": 380,
+      "preview": "🌅",
+      "rarity": "epic"
+    },
+    {
+      "id": "retro-film",
+      "name": "Retro Film",
+      "description": "Inspirado em câmeras analógicas.",
+      "price": 210,
+      "preview": "🎞️",
+      "rarity": "rare"
+    },
+    {
+      "id": "rainy-day",
+      "name": "Rainy Day",
+      "description": "Casaco azul profundo e botas.",
+      "price": 160,
+      "preview": "🌧️",
+      "rarity": "common"
+    }
+  ],
+  "events": [
+    {
+      "id": "daily-coffee",
+      "title": "Café por Conta da Casa",
+      "description": "Visite o Café Boreal hoje e receba Lúmens extras.",
+      "banner": "☕",
+      "effects": [
+        {
+          "type": "currency",
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "id": "photo-challenge",
+      "title": "Desafio Fotográfico",
+      "description": "Disponível após se aproximar de Gael.",
+      "banner": "📸",
+      "conditions": [
+        {
+          "kind": "affinity",
+          "key": "gael",
+          "op": ">=",
+          "value": 8
+        }
+      ],
+      "effects": [
+        {
+          "type": "affinity",
+          "target": "gael",
+          "amount": 2
+        },
+        {
+          "type": "currency",
+          "amount": 35
+        }
+      ]
+    },
+    {
+      "id": "council-after-hours",
+      "title": "Conselho Depois do Expediente",
+      "description": "Leon precisa de ajuda com um problema que não cabe em planilha.",
+      "banner": "🌃",
+      "conditions": [
+        {
+          "kind": "affinity",
+          "key": "leon",
+          "op": ">=",
+          "value": 8
+        }
+      ],
+      "effects": [
+        {
+          "type": "affinity",
+          "target": "leon",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "secret-demo",
+      "title": "Demo Secreta",
+      "description": "Ravi quer testar uma música nova sem plateia.",
+      "banner": "🎧",
+      "conditions": [
+        {
+          "kind": "affinity",
+          "key": "ravi",
+          "op": ">=",
+          "value": 8
+        }
+      ],
+      "effects": [
+        {
+          "type": "affinity",
+          "target": "ravi",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "aurora-week",
+      "title": "Semana Aurora",
+      "description": "Evento sazonal com recompensas cosméticas.",
+      "banner": "✨",
+      "effects": [
+        {
+          "type": "currency",
+          "amount": 80
+        }
+      ]
+    }
+  ]
+}
