@@ -1,6 +1,6 @@
 # Inventário de Assets
 
-Gerado em 2026-09-22T11:37:28.239Z. Fonte ativa: `src/store/gameStore.ts -> src/data/season1.json`; o catálogo legado `public/content/story.json` não é carregado pelo app atual.
+Gerado em 2026-09-22T12:11:59.626Z. Fonte ativa: `src/store/gameStore.ts -> src/data/season1.json`; o catálogo legado `public/content/story.json` não é carregado pelo app atual.
 
 ## Resumo
 

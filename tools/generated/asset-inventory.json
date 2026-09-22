@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T11:37:28.239Z",
+  "generatedAt": "2026-09-22T12:11:59.626Z",
   "sourceOfTruth": {
     "runtime": "src/store/gameStore.ts -> src/data/season1.json",
     "assetResolver": "src/assets.ts",
