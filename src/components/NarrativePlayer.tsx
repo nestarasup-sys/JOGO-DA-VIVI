@@ -40,7 +40,8 @@ export function NarrativePlayer(){
   if(node.effects)g.applyEffects(node.effects);
   setTyped('');let i=0;
   if(!fullText)return;
-  const timer=window.setInterval(()=>{i++;setTyped(fullText.slice(0,i));if(i>=fullText.length)window.clearInterval(timer)},12);
+  if(g.settings.textSpeed===0){setTyped(fullText);return}
+  const timer=window.setInterval(()=>{i++;setTyped(fullText.slice(0,i));if(i>=fullText.length)window.clearInterval(timer)},g.settings.textSpeed);
   return()=>window.clearInterval(timer);
  },[g.playerOpen,g.playerNode]);
 
@@ -68,14 +69,14 @@ export function NarrativePlayer(){
 
  useEffect(()=>{
   if(!g.autoMode||!node||node.choice||node.end||typed!==fullText)return;
-  const timer=window.setTimeout(next,1450);
+  const timer=window.setTimeout(next,g.settings.autoDelay);
   return()=>window.clearTimeout(timer);
  },[g.autoMode,g.playerNode,typed,fullText]);
 
  if(!g.playerOpen||!ep||!node)return null;
  if(ending)return <div className="player endingView"><img className="playerBg" src={cg(ending.cg)}/><div className="vignette"/><article className="endingCard"><small>FINAL DESBLOQUEADO</small><h1>{ending.title}</h1><p>{ending.text}</p><button onClick={()=>{setEnding(null);g.nextNode()}}>Continuar epílogo</button></article></div>;
  const show=node.show||[];
- return <div className="player">
+ return <div className={`player ${g.settings.highContrast?'highContrast':''} ${g.settings.reducedMotion?'reducedMotion':''}`}>
   <img className="playerBg" src={bg(node.bg||'campus')}/><div className="vignette"/>
   <div className="playerTop"><div><b>{ep.title}</b><small>{node.loc}</small></div><div>
    <button title="Histórico" onClick={()=>setHistoryOpen(true)}><History size={18}/></button>
