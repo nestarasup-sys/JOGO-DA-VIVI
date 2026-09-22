@@ -1,0 +1,467 @@
+{
+  "sheets": [
+    {
+      "file": "assets/sheets/characters_sheet.svg",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/gael/neutral.webp"
+        },
+        {
+          "x": 512,
+          "y": 0,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/gael/smile.webp"
+        },
+        {
+          "x": 1024,
+          "y": 0,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/gael/tease.webp"
+        },
+        {
+          "x": 1536,
+          "y": 0,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/gael/serious.webp"
+        },
+        {
+          "x": 2048,
+          "y": 0,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/gael/blush.webp"
+        },
+        {
+          "x": 2560,
+          "y": 0,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/gael/angry.webp"
+        },
+        {
+          "x": 3072,
+          "y": 0,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/gael/sad.webp"
+        },
+        {
+          "x": 3584,
+          "y": 0,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/gael/surprised.webp"
+        },
+        {
+          "x": 0,
+          "y": 768,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/leon/neutral.webp"
+        },
+        {
+          "x": 512,
+          "y": 768,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/leon/smile.webp"
+        },
+        {
+          "x": 1024,
+          "y": 768,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/leon/tease.webp"
+        },
+        {
+          "x": 1536,
+          "y": 768,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/leon/serious.webp"
+        },
+        {
+          "x": 2048,
+          "y": 768,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/leon/blush.webp"
+        },
+        {
+          "x": 2560,
+          "y": 768,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/leon/angry.webp"
+        },
+        {
+          "x": 3072,
+          "y": 768,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/leon/sad.webp"
+        },
+        {
+          "x": 3584,
+          "y": 768,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/leon/surprised.webp"
+        },
+        {
+          "x": 0,
+          "y": 1536,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/ravi/neutral.webp"
+        },
+        {
+          "x": 512,
+          "y": 1536,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/ravi/smile.webp"
+        },
+        {
+          "x": 1024,
+          "y": 1536,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/ravi/tease.webp"
+        },
+        {
+          "x": 1536,
+          "y": 1536,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/ravi/serious.webp"
+        },
+        {
+          "x": 2048,
+          "y": 1536,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/ravi/blush.webp"
+        },
+        {
+          "x": 2560,
+          "y": 1536,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/ravi/angry.webp"
+        },
+        {
+          "x": 3072,
+          "y": 1536,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/ravi/sad.webp"
+        },
+        {
+          "x": 3584,
+          "y": 1536,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/ravi/surprised.webp"
+        },
+        {
+          "x": 0,
+          "y": 2304,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/maya/neutral.webp"
+        },
+        {
+          "x": 512,
+          "y": 2304,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/maya/smile.webp"
+        },
+        {
+          "x": 1024,
+          "y": 2304,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/maya/tease.webp"
+        },
+        {
+          "x": 1536,
+          "y": 2304,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/maya/serious.webp"
+        },
+        {
+          "x": 2048,
+          "y": 2304,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/maya/blush.webp"
+        },
+        {
+          "x": 2560,
+          "y": 2304,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/maya/angry.webp"
+        },
+        {
+          "x": 3072,
+          "y": 2304,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/maya/sad.webp"
+        },
+        {
+          "x": 3584,
+          "y": 2304,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/maya/surprised.webp"
+        },
+        {
+          "x": 0,
+          "y": 3072,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/player/neutral.webp"
+        },
+        {
+          "x": 512,
+          "y": 3072,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/player/smile.webp"
+        },
+        {
+          "x": 1024,
+          "y": 3072,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/player/tease.webp"
+        },
+        {
+          "x": 1536,
+          "y": 3072,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/player/serious.webp"
+        },
+        {
+          "x": 2048,
+          "y": 3072,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/player/blush.webp"
+        },
+        {
+          "x": 2560,
+          "y": 3072,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/player/angry.webp"
+        },
+        {
+          "x": 3072,
+          "y": 3072,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/player/sad.webp"
+        },
+        {
+          "x": 3584,
+          "y": 3072,
+          "w": 512,
+          "h": 768,
+          "out": "public/assets/characters/player/surprised.webp"
+        }
+      ]
+    },
+    {
+      "file": "assets/sheets/backgrounds_sheet.svg",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 640,
+          "h": 360,
+          "out": "public/assets/backgrounds/campus.webp"
+        },
+        {
+          "x": 640,
+          "y": 0,
+          "w": 640,
+          "h": 360,
+          "out": "public/assets/backgrounds/library.webp"
+        },
+        {
+          "x": 1280,
+          "y": 0,
+          "w": 640,
+          "h": 360,
+          "out": "public/assets/backgrounds/cafe.webp"
+        },
+        {
+          "x": 1920,
+          "y": 0,
+          "w": 640,
+          "h": 360,
+          "out": "public/assets/backgrounds/rain.webp"
+        },
+        {
+          "x": 0,
+          "y": 360,
+          "w": 640,
+          "h": 360,
+          "out": "public/assets/backgrounds/rooftop.webp"
+        },
+        {
+          "x": 640,
+          "y": 360,
+          "w": 640,
+          "h": 360,
+          "out": "public/assets/backgrounds/festival.webp"
+        },
+        {
+          "x": 1280,
+          "y": 360,
+          "w": 640,
+          "h": 360,
+          "out": "public/assets/backgrounds/room.webp"
+        },
+        {
+          "x": 1920,
+          "y": 360,
+          "w": 640,
+          "h": 360,
+          "out": "public/assets/backgrounds/garden.webp"
+        },
+        {
+          "x": 0,
+          "y": 720,
+          "w": 640,
+          "h": 360,
+          "out": "public/assets/backgrounds/studio.webp"
+        },
+        {
+          "x": 640,
+          "y": 720,
+          "w": 640,
+          "h": 360,
+          "out": "public/assets/backgrounds/auditorium.webp"
+        },
+        {
+          "x": 1280,
+          "y": 720,
+          "w": 640,
+          "h": 360,
+          "out": "public/assets/backgrounds/downtown.webp"
+        },
+        {
+          "x": 1920,
+          "y": 720,
+          "w": 640,
+          "h": 360,
+          "out": "public/assets/backgrounds/night.webp"
+        }
+      ]
+    },
+    {
+      "file": "assets/sheets/cg_sheet.svg",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 512,
+          "h": 320,
+          "out": "public/assets/cg/cg_intro.webp"
+        },
+        {
+          "x": 512,
+          "y": 0,
+          "w": 512,
+          "h": 320,
+          "out": "public/assets/cg/cg_rain.webp"
+        },
+        {
+          "x": 1024,
+          "y": 0,
+          "w": 512,
+          "h": 320,
+          "out": "public/assets/cg/cg_rooftop.webp"
+        },
+        {
+          "x": 1536,
+          "y": 0,
+          "w": 512,
+          "h": 320,
+          "out": "public/assets/cg/cg_festival.webp"
+        },
+        {
+          "x": 0,
+          "y": 320,
+          "w": 512,
+          "h": 320,
+          "out": "public/assets/cg/cg_library.webp"
+        },
+        {
+          "x": 512,
+          "y": 320,
+          "w": 512,
+          "h": 320,
+          "out": "public/assets/cg/cg_studio.webp"
+        },
+        {
+          "x": 1024,
+          "y": 320,
+          "w": 512,
+          "h": 320,
+          "out": "public/assets/cg/cg_photo.webp"
+        },
+        {
+          "x": 1536,
+          "y": 320,
+          "w": 512,
+          "h": 320,
+          "out": "public/assets/cg/cg_confession.webp"
+        },
+        {
+          "x": 0,
+          "y": 640,
+          "w": 512,
+          "h": 320,
+          "out": "public/assets/cg/cg_gael.webp"
+        },
+        {
+          "x": 512,
+          "y": 640,
+          "w": 512,
+          "h": 320,
+          "out": "public/assets/cg/cg_leon.webp"
+        },
+        {
+          "x": 1024,
+          "y": 640,
+          "w": 512,
+          "h": 320,
+          "out": "public/assets/cg/cg_ravi.webp"
+        },
+        {
+          "x": 1536,
+          "y": 640,
+          "w": 512,
+          "h": 320,
+          "out": "public/assets/cg/cg_solo.webp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1420 @@
+{
+  "meta": {
+    "version": 3,
+    "title": "Entre Nós: Aurora",
+    "season": "Temporada 1 — As coisas que a gente não diz"
+  },
+  "episodes": [
+    {
+      "id": 1,
+      "title": "Primeiro Dia, Velhos Ecos",
+      "subtitle": "Chegadas",
+      "desc": "Uma transferência, três encontros e uma mensagem que sabe demais.",
+      "cover": "campus",
+      "nodes": [
+        {
+          "bg": "campus",
+          "loc": "Portão principal",
+          "speaker": "Narrador",
+          "text": "O letreiro da Universidade Aurora parece maior do que nas fotos. {name} respira fundo e decide que recomeços não deveriam ser tão barulhentos.",
+          "show": [
+            [
+              "player",
+              "neutral"
+            ]
+          ],
+          "unlockCG": "cg_intro"
+        },
+        {
+          "bg": "campus",
+          "loc": "Pátio central",
+          "speaker": "Maya",
+          "text": "Você é a transferência de Comunicação, né? Maya. Guia turística não oficial, especialista em atalhos e café ruim.",
+          "show": [
+            [
+              "maya",
+              "smile"
+            ],
+            [
+              "player",
+              "neutral"
+            ]
+          ]
+        },
+        {
+          "bg": "campus",
+          "loc": "Pátio central",
+          "speaker": "Gael",
+          "text": "A coordenação pediu que eu entregasse seu crachá. Você deve ser {name}.",
+          "show": [
+            [
+              "gael",
+              "serious"
+            ],
+            [
+              "player",
+              "neutral"
+            ]
+          ],
+          "choice": [
+            {
+              "text": "“E você sempre fala como se estivesse lendo um relatório?”",
+              "tag": "Coragem",
+              "effects": {
+                "affinity": {
+                  "gael": 5
+                },
+                "traits": {
+                  "courage": 1
+                }
+              }
+            },
+            {
+              "text": "“Sou eu. Obrigada por vir me encontrar.”",
+              "tag": "Empatia",
+              "effects": {
+                "affinity": {
+                  "gael": 7
+                },
+                "traits": {
+                  "empathy": 1
+                }
+              }
+            },
+            {
+              "text": "“O crachá vem com mapa para eu não desaparecer aqui dentro?”",
+              "tag": "Humor",
+              "effects": {
+                "affinity": {
+                  "gael": 4
+                },
+                "traits": {
+                  "humor": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "bg": "library",
+          "loc": "Biblioteca",
+          "speaker": "Leon",
+          "text": "Você ocupou a única tomada que funciona neste andar. Não estou reclamando. Ainda.",
+          "show": [
+            [
+              "leon",
+              "tease"
+            ],
+            [
+              "player",
+              "neutral"
+            ]
+          ],
+          "choice": [
+            {
+              "text": "“Que honra. Roubei um patrimônio histórico.”",
+              "tag": "Humor",
+              "effects": {
+                "affinity": {
+                  "leon": 8
+                },
+                "traits": {
+                  "humor": 1
+                }
+              }
+            },
+            {
+              "text": "“Se quiser, eu divido.”",
+              "tag": "Empatia",
+              "effects": {
+                "affinity": {
+                  "leon": 4
+                },
+                "traits": {
+                  "empathy": 1
+                }
+              }
+            },
+            {
+              "text": "“Chegou primeiro quem sentou primeiro.”",
+              "tag": "Coragem",
+              "effects": {
+                "affinity": {
+                  "leon": 6
+                },
+                "traits": {
+                  "courage": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "bg": "garden",
+          "loc": "Jardim norte",
+          "speaker": "Ravi",
+          "text": "Não se mexe. A luz está perfeita… pronto. Agora você pode reclamar que eu fotografei sem pedir.",
+          "show": [
+            [
+              "ravi",
+              "smile"
+            ],
+            [
+              "player",
+              "surprised"
+            ]
+          ],
+          "choice": [
+            {
+              "text": "“Eu ia reclamar. Mas quero ver primeiro.”",
+              "effects": {
+                "affinity": {
+                  "ravi": 8
+                },
+                "traits": {
+                  "humor": 1
+                }
+              }
+            },
+            {
+              "text": "“Apaga. Depois você pergunta.”",
+              "effects": {
+                "affinity": {
+                  "ravi": 5
+                },
+                "traits": {
+                  "courage": 1
+                }
+              }
+            },
+            {
+              "text": "“Só não posta em lugar nenhum.”",
+              "effects": {
+                "affinity": {
+                  "ravi": 5
+                },
+                "traits": {
+                  "empathy": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "bg": "room",
+          "loc": "Seu quarto",
+          "speaker": "Narrador",
+          "text": "Às 23:41, o celular vibra. Número desconhecido: “Bem-vinda ao Projeto Aurora. Amanhã, não chegue atrasada.”",
+          "show": [
+            [
+              "player",
+              "serious"
+            ]
+          ],
+          "effects": {
+            "coins": 40,
+            "messages": [
+              "Sistema Aurora"
+            ]
+          },
+          "end": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Café, Chuva e Coincidências",
+      "subtitle": "Proximidade",
+      "desc": "Uma tempestade prende todo mundo na cidade. Alguém decide ficar.",
+      "cover": "rain",
+      "nodes": [
+        {
+          "bg": "rain",
+          "loc": "Centro de Aurora",
+          "speaker": "Narrador",
+          "text": "A chuva chega antes do ônibus. Em dez minutos, a avenida vira um espelho.",
+          "show": [
+            [
+              "player",
+              "sad"
+            ]
+          ]
+        },
+        {
+          "bg": "cafe",
+          "loc": "Café Lumina",
+          "speaker": "Maya",
+          "text": "Fica aqui até passar. Curiosamente, três pessoas perguntaram se você ainda estava presa no centro.",
+          "show": [
+            [
+              "maya",
+              "tease"
+            ],
+            [
+              "player",
+              "neutral"
+            ]
+          ]
+        },
+        {
+          "bg": "cafe",
+          "loc": "Café Lumina",
+          "speaker": "Narrador",
+          "text": "Quem você chama?",
+          "show": [
+            [
+              "player",
+              "neutral"
+            ]
+          ],
+          "choice": [
+            {
+              "text": "Gael — “Ele provavelmente tem um plano.”",
+              "effects": {
+                "affinity": {
+                  "gael": 8
+                },
+                "flags": {
+                  "rain": "gael"
+                },
+                "messages": [
+                  "Gael"
+                ]
+              }
+            },
+            {
+              "text": "Leon — “Quero ver se ele consegue não provocar por cinco minutos.”",
+              "effects": {
+                "affinity": {
+                  "leon": 8
+                },
+                "flags": {
+                  "rain": "leon"
+                },
+                "messages": [
+                  "Leon"
+                ]
+              }
+            },
+            {
+              "text": "Ravi — “Ele certamente conhece um caminho melhor.”",
+              "effects": {
+                "affinity": {
+                  "ravi": 8
+                },
+                "flags": {
+                  "rain": "ravi"
+                },
+                "messages": [
+                  "Ravi"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "routeVariant",
+          "flag": "rain",
+          "variants": {
+            "gael": {
+              "bg": "rain",
+              "loc": "Rua das Magnólias",
+              "speaker": "Gael",
+              "text": "Você podia ter esperado. — E perder a chance de dizer que meu planejamento salvou o dia? Nem pensar.",
+              "show": [
+                [
+                  "gael",
+                  "smile"
+                ],
+                [
+                  "player",
+                  "blush"
+                ]
+              ]
+            },
+            "leon": {
+              "bg": "rain",
+              "loc": "Rua das Magnólias",
+              "speaker": "Leon",
+              "text": "Não interpreta errado. Eu só estava perto. — Claro. Perto, com dois cafés e um guarda-chuva extra.",
+              "show": [
+                [
+                  "leon",
+                  "tease"
+                ],
+                [
+                  "player",
+                  "blush"
+                ]
+              ]
+            },
+            "ravi": {
+              "bg": "rain",
+              "loc": "Rua das Magnólias",
+              "speaker": "Ravi",
+              "text": "Conheço um atalho. A parte ruim é que demora oito minutos a mais. A parte boa é que tem menos gente.",
+              "show": [
+                [
+                  "ravi",
+                  "smile"
+                ],
+                [
+                  "player",
+                  "blush"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "bg": "rain",
+          "loc": "Rua das Magnólias",
+          "speaker": "Narrador",
+          "text": "Por três quarteirões, o guarda-chuva parece pequeno demais. Pela primeira vez, {name} deseja que o caminho fosse maior.",
+          "show": [
+            [
+              "player",
+              "blush"
+            ]
+          ],
+          "unlockCG": "cg_rain",
+          "effects": {
+            "coins": 35
+          },
+          "end": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Rumores em Neon",
+      "subtitle": "Ciúme",
+      "desc": "Uma foto fora de contexto vira assunto no campus.",
+      "cover": "rooftop",
+      "nodes": [
+        {
+          "bg": "campus",
+          "loc": "Pátio central",
+          "speaker": "Maya",
+          "text": "Tem uma foto sua circulando no grupo do curso. Não é grave. Só parece íntima demais para quem adora inventar novela.",
+          "show": [
+            [
+              "maya",
+              "serious"
+            ],
+            [
+              "player",
+              "surprised"
+            ]
+          ]
+        },
+        {
+          "bg": "rooftop",
+          "loc": "Terraço",
+          "speaker": "Leon",
+          "text": "Um dia e meio aqui e você já produz mais conteúdo que o jornal do campus inteiro.",
+          "show": [
+            [
+              "leon",
+              "tease"
+            ],
+            [
+              "player",
+              "serious"
+            ]
+          ],
+          "choice": [
+            {
+              "text": "“Você parece incomodado demais para alguém que acha engraçado.”",
+              "effects": {
+                "affinity": {
+                  "leon": 8
+                },
+                "traits": {
+                  "courage": 1
+                }
+              }
+            },
+            {
+              "text": "“Eu só queria que parassem de decidir minha história por uma foto.”",
+              "effects": {
+                "traits": {
+                  "empathy": 1
+                }
+              }
+            },
+            {
+              "text": "“Minha carreira de celebridade começou num guarda-chuva.”",
+              "effects": {
+                "affinity": {
+                  "leon": 5
+                },
+                "traits": {
+                  "humor": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "bg": "rooftop",
+          "loc": "Terraço",
+          "speaker": "Narrador",
+          "text": "O sarcasmo some do rosto de Leon por um instante. Lá embaixo, Gael cruza o pátio. Ravi espera você assentir antes de erguer a câmera.",
+          "show": [
+            [
+              "leon",
+              "serious"
+            ],
+            [
+              "player",
+              "neutral"
+            ]
+          ],
+          "unlockCG": "cg_rooftop"
+        },
+        {
+          "bg": "library",
+          "loc": "Biblioteca",
+          "speaker": "Gael",
+          "text": "Você não deve explicação ao campus. Mas algumas pessoas preferem ouvir sua versão.",
+          "show": [
+            [
+              "gael",
+              "neutral"
+            ],
+            [
+              "player",
+              "neutral"
+            ]
+          ],
+          "choice": [
+            {
+              "text": "“E você é uma dessas pessoas?”",
+              "effects": {
+                "affinity": {
+                  "gael": 9
+                },
+                "traits": {
+                  "courage": 1
+                }
+              }
+            },
+            {
+              "text": "“Obrigada por não me pressionar.”",
+              "effects": {
+                "affinity": {
+                  "gael": 6
+                },
+                "traits": {
+                  "empathy": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "bg": "night",
+          "loc": "Celular",
+          "speaker": "Ravi",
+          "text": "Mensagem de Ravi: “Se quiser, eu descubro quem espalhou. Se não quiser… ainda posso te mandar a versão boa.”",
+          "show": [
+            [
+              "ravi",
+              "smile"
+            ]
+          ],
+          "effects": {
+            "messages": [
+              "Ravi"
+            ],
+            "coins": 35
+          },
+          "end": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Festival de Luzes",
+      "subtitle": "Escolhas",
+      "desc": "Lanternas, música e a primeira noite em que você procura alguém.",
+      "cover": "festival",
+      "nodes": [
+        {
+          "bg": "room",
+          "loc": "Seu quarto",
+          "speaker": "Maya",
+          "text": "Regra número um do festival: use algo que faça parecer que você planejou tudo, mesmo que tenha decidido há cinco minutos.",
+          "show": [
+            [
+              "maya",
+              "smile"
+            ],
+            [
+              "player",
+              "neutral"
+            ]
+          ]
+        },
+        {
+          "bg": "festival",
+          "loc": "Praça central",
+          "speaker": "Narrador",
+          "text": "Quem você procura primeiro?",
+          "show": [
+            [
+              "player",
+              "neutral"
+            ]
+          ],
+          "choice": [
+            {
+              "text": "Gael, perto da barraca de livros.",
+              "effects": {
+                "affinity": {
+                  "gael": 10
+                },
+                "flags": {
+                  "festival": "gael"
+                }
+              }
+            },
+            {
+              "text": "Leon, atrás do palco.",
+              "effects": {
+                "affinity": {
+                  "leon": 10
+                },
+                "flags": {
+                  "festival": "leon"
+                }
+              }
+            },
+            {
+              "text": "Ravi, fotografando lanternas.",
+              "effects": {
+                "affinity": {
+                  "ravi": 10
+                },
+                "flags": {
+                  "festival": "ravi"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "routeVariant",
+          "flag": "festival",
+          "variants": {
+            "gael": {
+              "bg": "festival",
+              "loc": "Barraca de livros",
+              "speaker": "Gael",
+              "text": "Eu ia mandar mensagem. — E por que não mandou? — Porque você veio antes de eu decidir o que escrever.",
+              "show": [
+                [
+                  "gael",
+                  "blush"
+                ],
+                [
+                  "player",
+                  "blush"
+                ]
+              ]
+            },
+            "leon": {
+              "bg": "festival",
+              "loc": "Atrás do palco",
+              "speaker": "Leon",
+              "text": "Você veio me procurar? Perigoso. Posso começar a achar que minha presença é desejada.",
+              "show": [
+                [
+                  "leon",
+                  "tease"
+                ],
+                [
+                  "player",
+                  "blush"
+                ]
+              ]
+            },
+            "ravi": {
+              "bg": "festival",
+              "loc": "Jardim iluminado",
+              "speaker": "Ravi",
+              "text": "Fica aqui um segundo. Não pela foto. Pela companhia.",
+              "show": [
+                [
+                  "ravi",
+                  "blush"
+                ],
+                [
+                  "player",
+                  "blush"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "bg": "festival",
+          "loc": "Praça central",
+          "speaker": "Narrador",
+          "text": "Quando os fogos começam, a universidade já não parece um lugar emprestado.",
+          "show": [
+            [
+              "player",
+              "smile"
+            ]
+          ],
+          "unlockCG": "cg_festival",
+          "effects": {
+            "coins": 55,
+            "messages": [
+              "Maya"
+            ]
+          },
+          "end": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Entre Páginas e Entrelinhas",
+      "subtitle": "Segredos",
+      "desc": "Um arquivo antigo liga o Projeto Aurora a alguém que você conhece.",
+      "cover": "library",
+      "nodes": [
+        {
+          "bg": "library",
+          "loc": "Arquivo da biblioteca",
+          "speaker": "Gael",
+          "text": "O Projeto Aurora não é uma disciplina. É uma seleção interna para a residência criativa do próximo semestre.",
+          "show": [
+            [
+              "gael",
+              "serious"
+            ],
+            [
+              "player",
+              "surprised"
+            ]
+          ]
+        },
+        {
+          "bg": "library",
+          "loc": "Arquivo da biblioteca",
+          "speaker": "Narrador",
+          "text": "Seu nome está numa lista de candidatos. Ao lado: “indicada antes da transferência”.",
+          "show": [
+            [
+              "player",
+              "serious"
+            ]
+          ],
+          "unlockCG": "cg_library"
+        },
+        {
+          "bg": "library",
+          "loc": "Arquivo da biblioteca",
+          "speaker": "Gael",
+          "text": "Eu sabia da seleção. Não sabia que você já estava nela.",
+          "show": [
+            [
+              "gael",
+              "sad"
+            ],
+            [
+              "player",
+              "serious"
+            ]
+          ],
+          "choice": [
+            {
+              "text": "“Eu acredito em você.”",
+              "effects": {
+                "affinity": {
+                  "gael": 10
+                },
+                "traits": {
+                  "empathy": 1
+                },
+                "flags": {
+                  "trustGael": true
+                }
+              }
+            },
+            {
+              "text": "“Preciso de tempo para decidir no que acredito.”",
+              "effects": {
+                "affinity": {
+                  "gael": 4
+                },
+                "traits": {
+                  "courage": 1
+                },
+                "flags": {
+                  "trustGael": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "bg": "studio",
+          "loc": "Estúdio de mídia",
+          "speaker": "Ravi",
+          "text": "A seleção final é em dupla. Isso significa que alguém vai precisar escolher alguém.",
+          "show": [
+            [
+              "ravi",
+              "serious"
+            ],
+            [
+              "player",
+              "neutral"
+            ]
+          ],
+          "effects": {
+            "coins": 45
+          },
+          "end": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Depois do Ensaio",
+      "subtitle": "Quase",
+      "desc": "Uma apresentação dá errado e o que vem depois fica íntimo demais.",
+      "cover": "studio",
+      "nodes": [
+        {
+          "bg": "auditorium",
+          "loc": "Auditório",
+          "speaker": "Narrador",
+          "text": "Um cabo falha, o telão apaga e a sala inteira decide olhar para vocês.",
+          "show": [
+            [
+              "player",
+              "serious"
+            ]
+          ]
+        },
+        {
+          "bg": "studio",
+          "loc": "Bastidores",
+          "speaker": "Leon",
+          "text": "Respira. Se tudo der errado, eu distraio o público. Tenho anos de experiência parecendo confiante sem motivo.",
+          "show": [
+            [
+              "leon",
+              "smile"
+            ],
+            [
+              "player",
+              "neutral"
+            ]
+          ]
+        },
+        {
+          "bg": "studio",
+          "loc": "Bastidores",
+          "speaker": "Narrador",
+          "text": "Gael coordena, Leon improvisa e Ravi refaz as projeções. Pela primeira vez, os quatro funcionam como um time.",
+          "show": [
+            [
+              "gael",
+              "smile"
+            ],
+            [
+              "leon",
+              "smile"
+            ],
+            [
+              "ravi",
+              "smile"
+            ]
+          ],
+          "unlockCG": "cg_studio"
+        },
+        {
+          "bg": "studio",
+          "loc": "Corredor vazio",
+          "speaker": "Narrador",
+          "text": "Depois, alguém fica.",
+          "show": [
+            [
+              "player",
+              "neutral"
+            ]
+          ],
+          "choice": [
+            {
+              "text": "Ficar com Gael.",
+              "effects": {
+                "affinity": {
+                  "gael": 10
+                },
+                "flags": {
+                  "afterRehearsal": "gael"
+                }
+              }
+            },
+            {
+              "text": "Ajudar Leon.",
+              "effects": {
+                "affinity": {
+                  "leon": 10
+                },
+                "flags": {
+                  "afterRehearsal": "leon"
+                }
+              }
+            },
+            {
+              "text": "Esperar Ravi.",
+              "effects": {
+                "affinity": {
+                  "ravi": 10
+                },
+                "flags": {
+                  "afterRehearsal": "ravi"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "routeVariant",
+          "flag": "afterRehearsal",
+          "variants": {
+            "gael": {
+              "bg": "studio",
+              "loc": "Corredor",
+              "speaker": "Gael",
+              "text": "Você sempre fica quando todo mundo vai embora? — Só quando vale a pena.",
+              "show": [
+                [
+                  "gael",
+                  "blush"
+                ],
+                [
+                  "player",
+                  "blush"
+                ]
+              ]
+            },
+            "leon": {
+              "bg": "studio",
+              "loc": "Corredor",
+              "speaker": "Leon",
+              "text": "Se eu disser que gostei de trabalhar com você, isso destrói minha reputação.",
+              "show": [
+                [
+                  "leon",
+                  "blush"
+                ],
+                [
+                  "player",
+                  "blush"
+                ]
+              ]
+            },
+            "ravi": {
+              "bg": "studio",
+              "loc": "Corredor",
+              "speaker": "Ravi",
+              "text": "Minha foto favorita é a única em que você não sabia que eu estava com a câmera abaixada.",
+              "show": [
+                [
+                  "ravi",
+                  "blush"
+                ],
+                [
+                  "player",
+                  "blush"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "bg": "night",
+          "loc": "Saída do campus",
+          "speaker": "Narrador",
+          "text": "Há coisas que ninguém diz em voz alta porque, depois de ditas, não voltam a caber no silêncio.",
+          "show": [
+            [
+              "player",
+              "blush"
+            ]
+          ],
+          "effects": {
+            "coins": 55
+          },
+          "end": true
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "A Foto que Ficou",
+      "subtitle": "Rota",
+      "desc": "Você precisa decidir quem terá acesso à parte mais difícil de você.",
+      "cover": "garden",
+      "nodes": [
+        {
+          "bg": "garden",
+          "loc": "Jardim norte",
+          "speaker": "Ravi",
+          "text": "Achei a primeira foto que tirei de você. Pensei em apagar. Depois percebi que você já não é a mesma pessoa nela.",
+          "show": [
+            [
+              "ravi",
+              "neutral"
+            ],
+            [
+              "player",
+              "neutral"
+            ]
+          ],
+          "unlockCG": "cg_photo"
+        },
+        {
+          "bg": "garden",
+          "loc": "Jardim norte",
+          "speaker": "Narrador",
+          "text": "Com quem você quer formar a dupla? Essa escolha abre a rota principal.",
+          "show": [
+            [
+              "player",
+              "serious"
+            ]
+          ],
+          "choice": [
+            {
+              "text": "Gael — estabilidade e atenção aos detalhes.",
+              "effects": {
+                "route": "gael",
+                "affinity": {
+                  "gael": 12
+                }
+              }
+            },
+            {
+              "text": "Leon — atrito, criatividade e química.",
+              "effects": {
+                "route": "leon",
+                "affinity": {
+                  "leon": 12
+                }
+              }
+            },
+            {
+              "text": "Ravi — confiança e a sensação de ser vista.",
+              "effects": {
+                "route": "ravi",
+                "affinity": {
+                  "ravi": 12
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "routeScene",
+          "variants": {
+            "gael": {
+              "bg": "library",
+              "loc": "Sala de estudo",
+              "speaker": "Gael",
+              "text": "Eu não quero que você me escolha porque sou a opção segura. Quero que escolha porque quer que eu fique.",
+              "show": [
+                [
+                  "gael",
+                  "blush"
+                ],
+                [
+                  "player",
+                  "blush"
+                ]
+              ]
+            },
+            "leon": {
+              "bg": "auditorium",
+              "loc": "Palco vazio",
+              "speaker": "Leon",
+              "text": "Você percebe que trabalhar comigo significa discutir o tempo todo? Péssimo. Eu esperava te convencer a ficar perto por outros motivos.",
+              "show": [
+                [
+                  "leon",
+                  "blush"
+                ],
+                [
+                  "player",
+                  "blush"
+                ]
+              ]
+            },
+            "ravi": {
+              "bg": "garden",
+              "loc": "Estufa",
+              "speaker": "Ravi",
+              "text": "Com você, eu queria aprender a fazer o contrário de fotografar escondido: perguntar antes.",
+              "show": [
+                [
+                  "ravi",
+                  "blush"
+                ],
+                [
+                  "player",
+                  "blush"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "bg": "room",
+          "loc": "Seu quarto",
+          "speaker": "Narrador",
+          "text": "O nome escolhido continua aceso na tela depois que a conversa termina.",
+          "show": [
+            [
+              "player",
+              "blush"
+            ]
+          ],
+          "effects": {
+            "coins": 65
+          },
+          "end": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "O Que a Gente Esconde",
+      "subtitle": "Conflito",
+      "desc": "Uma proposta individual coloca a dupla em risco.",
+      "cover": "downtown",
+      "nodes": [
+        {
+          "bg": "downtown",
+          "loc": "Galeria Central",
+          "speaker": "Narrador",
+          "text": "A banca oferece a você uma vaga individual em outro projeto. Excelente oportunidade. Péssimo momento.",
+          "show": [
+            [
+              "player",
+              "serious"
+            ]
+          ]
+        },
+        {
+          "type": "routeScene",
+          "variants": {
+            "gael": {
+              "bg": "downtown",
+              "loc": "Galeria",
+              "speaker": "Gael",
+              "text": "Você devia aceitar se for o que quer. Só não me peça para fingir que não vai doer.",
+              "show": [
+                [
+                  "gael",
+                  "sad"
+                ],
+                [
+                  "player",
+                  "serious"
+                ]
+              ]
+            },
+            "leon": {
+              "bg": "downtown",
+              "loc": "Galeria",
+              "speaker": "Leon",
+              "text": "Vai. Só não transforma isso numa decisão fácil para me poupar, porque eu vou perceber.",
+              "show": [
+                [
+                  "leon",
+                  "angry"
+                ],
+                [
+                  "player",
+                  "serious"
+                ]
+              ]
+            },
+            "ravi": {
+              "bg": "downtown",
+              "loc": "Galeria",
+              "speaker": "Ravi",
+              "text": "Eu consigo terminar sozinho. A questão é se quero que você vá sem saber que eu preferia que ficasse.",
+              "show": [
+                [
+                  "ravi",
+                  "sad"
+                ],
+                [
+                  "player",
+                  "serious"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "bg": "downtown",
+          "loc": "Galeria Central",
+          "speaker": "Narrador",
+          "text": "Sua resposta define menos o projeto do que a forma como você quer construir relações.",
+          "show": [
+            [
+              "player",
+              "neutral"
+            ]
+          ],
+          "choice": [
+            {
+              "text": "“Eu fico porque esse projeto também é meu.”",
+              "effects": {
+                "traits": {
+                  "empathy": 1
+                },
+                "flags": {
+                  "stayed": true
+                }
+              }
+            },
+            {
+              "text": "“Eu vou aceitar. Se o que temos depende de eu desistir, não é justo.”",
+              "effects": {
+                "traits": {
+                  "courage": 1
+                },
+                "flags": {
+                  "stayed": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "bg": "night",
+          "loc": "Cidade de Aurora",
+          "speaker": "Narrador",
+          "text": "Algumas aproximações começam quando duas pessoas descobrem como discordar sem desaparecer.",
+          "show": [
+            [
+              "player",
+              "neutral"
+            ]
+          ],
+          "effects": {
+            "coins": 70
+          },
+          "end": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Sem Ensaio",
+      "subtitle": "Confissão",
+      "desc": "Na véspera da final, ninguém consegue fingir neutralidade.",
+      "cover": "night",
+      "nodes": [
+        {
+          "bg": "auditorium",
+          "loc": "Auditório vazio",
+          "speaker": "Narrador",
+          "text": "A apresentação está pronta. Pela primeira vez em semanas, não há nada urgente para consertar.",
+          "show": [
+            [
+              "player",
+              "neutral"
+            ]
+          ]
+        },
+        {
+          "type": "routeScene",
+          "variants": {
+            "gael": {
+              "bg": "auditorium",
+              "loc": "Auditório",
+              "speaker": "Gael",
+              "text": "Eu ensaiei isso três vezes e todas pareceram relatório. Então: eu gosto de você. Muito.",
+              "show": [
+                [
+                  "gael",
+                  "blush"
+                ],
+                [
+                  "player",
+                  "surprised"
+                ]
+              ]
+            },
+            "leon": {
+              "bg": "auditorium",
+              "loc": "Auditório",
+              "speaker": "Leon",
+              "text": "Eu tinha uma frase boa. Aí você olhou para mim e eu esqueci. Eu gosto de você. Irritantemente.",
+              "show": [
+                [
+                  "leon",
+                  "blush"
+                ],
+                [
+                  "player",
+                  "surprised"
+                ]
+              ]
+            },
+            "ravi": {
+              "bg": "auditorium",
+              "loc": "Auditório",
+              "speaker": "Ravi",
+              "text": "Passei meses tentando registrar o momento certo. Acho que estava evitando viver um. Eu gosto de você, {name}.",
+              "show": [
+                [
+                  "ravi",
+                  "blush"
+                ],
+                [
+                  "player",
+                  "surprised"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "bg": "auditorium",
+          "loc": "Auditório",
+          "speaker": "Narrador",
+          "text": "Sua resposta não precisa ser perfeita. Só precisa ser sua.",
+          "show": [
+            [
+              "player",
+              "blush"
+            ]
+          ],
+          "choice": [
+            {
+              "text": "“Eu gosto de você também.”",
+              "effects": {
+                "flags": {
+                  "romance": true
+                },
+                "traits": {
+                  "empathy": 1
+                },
+                "unlockCG": "cg_confession"
+              }
+            },
+            {
+              "text": "“Eu quero tentar. Devagar, mas de verdade.”",
+              "effects": {
+                "flags": {
+                  "romance": true
+                },
+                "traits": {
+                  "courage": 1
+                },
+                "unlockCG": "cg_confession"
+              }
+            },
+            {
+              "text": "“Você é importante para mim, mas eu não quero transformar isso em romance.”",
+              "effects": {
+                "flags": {
+                  "romance": false
+                },
+                "traits": {
+                  "courage": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "bg": "night",
+          "loc": "Escadaria",
+          "speaker": "Narrador",
+          "text": "Nada no mundo mudou — e, ainda assim, parece impossível voltar exatamente ao que era antes.",
+          "show": [
+            [
+              "player",
+              "smile"
+            ]
+          ],
+          "effects": {
+            "coins": 80
+          },
+          "end": true
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Depois da Meia-noite",
+      "subtitle": "Final",
+      "desc": "A apresentação termina. O que fica depende do que você construiu.",
+      "cover": "campus",
+      "nodes": [
+        {
+          "bg": "auditorium",
+          "loc": "Apresentação final",
+          "speaker": "Narrador",
+          "text": "As luzes apagam. O último slide desaparece. Por um segundo, existe apenas o silêncio antes dos aplausos.",
+          "show": [
+            [
+              "player",
+              "neutral"
+            ]
+          ]
+        },
+        {
+          "bg": "campus",
+          "loc": "Pátio",
+          "speaker": "Maya",
+          "text": "Você percebe que sobreviveu? E pior: ficou sentimental. Eu tenho provas.",
+          "show": [
+            [
+              "maya",
+              "tease"
+            ],
+            [
+              "player",
+              "smile"
+            ]
+          ]
+        },
+        {
+          "type": "ending"
+        },
+        {
+          "bg": "campus",
+          "loc": "Universidade Aurora",
+          "speaker": "Narrador",
+          "text": "Alguns finais parecem portas fechando. Outros servem para você notar quantas abriram enquanto estava ocupada vivendo.",
+          "show": [
+            [
+              "player",
+              "smile"
+            ]
+          ],
+          "effects": {
+            "coins": 120
+          },
+          "end": true
+        }
+      ]
+    }
+  ]
+}
