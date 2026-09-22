@@ -30,7 +30,7 @@ function removeConnectedBackground(raw, w, h) {
     for (const [nx, ny] of [[x - 1, y], [x + 1, y], [x, y - 1], [x, y + 1]]) {
       if (nx < 0 || ny < 0 || nx >= w || ny >= h) continue;
       const ni = index(nx, ny);
-      if (!visited[ni] && colorDistance(current, rgb(ni)) <= 34) push(nx, ny);
+      if (!visited[ni] && colorDistance(current, rgb(ni)) <= 12) push(nx, ny);
     }
   }
   for (let i = 0; i < visited.length; i++) if (visited[i]) pixels[i * 4 + 3] = 0;
