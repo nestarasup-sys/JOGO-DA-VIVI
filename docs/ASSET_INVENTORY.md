@@ -1,6 +1,6 @@
 # Inventário de Assets
 
-Gerado em 2026-09-22T11:14:51.604Z. Fonte ativa: `src/store/gameStore.ts -> src/data/season1.json`; o catálogo legado `public/content/story.json` não é carregado pelo app atual.
+Gerado em 2026-09-22T11:37:28.239Z. Fonte ativa: `src/store/gameStore.ts -> src/data/season1.json`; o catálogo legado `public/content/story.json` não é carregado pelo app atual.
 
 ## Resumo
 
@@ -22,43 +22,43 @@ Gerado em 2026-09-22T11:14:51.604Z. Fonte ativa: `src/store/gameStore.ts -> src/
 |---|---|---|---|---|
 | character-sprite | `gael/neutral` | `public/assets/characters/gael/neutral.webp` | ok | asset canônico encontrado |
 | character-sprite | `gael/smile` | `public/assets/characters/gael/smile.webp` | ok | asset canônico encontrado |
-| character-sprite | `gael/tease` | `public/assets/characters/gael/tease.webp` | missing | fallback de smile; arte final ausente |
+| character-sprite | `gael/tease` | `public/assets/characters/gael/tease.webp` | ok | asset canônico encontrado |
 | character-sprite | `gael/serious` | `public/assets/characters/gael/serious.webp` | ok | asset canônico encontrado |
 | character-sprite | `gael/blush` | `public/assets/characters/gael/blush.webp` | ok | asset canônico encontrado |
 | character-sprite | `gael/angry` | `public/assets/characters/gael/angry.webp` | ok | asset canônico encontrado |
-| character-sprite | `gael/sad` | `public/assets/characters/gael/sad.webp` | missing | fallback de serious; arte final ausente |
+| character-sprite | `gael/sad` | `public/assets/characters/gael/sad.webp` | ok | asset canônico encontrado |
 | character-sprite | `gael/surprised` | `public/assets/characters/gael/surprised.webp` | ok | asset canônico encontrado |
 | character-sprite | `leon/neutral` | `public/assets/characters/leon/neutral.webp` | ok | asset canônico encontrado |
 | character-sprite | `leon/smile` | `public/assets/characters/leon/smile.webp` | ok | asset canônico encontrado |
-| character-sprite | `leon/tease` | `public/assets/characters/leon/tease.webp` | missing | fallback de smile; arte final ausente |
+| character-sprite | `leon/tease` | `public/assets/characters/leon/tease.webp` | ok | asset canônico encontrado |
 | character-sprite | `leon/serious` | `public/assets/characters/leon/serious.webp` | ok | asset canônico encontrado |
 | character-sprite | `leon/blush` | `public/assets/characters/leon/blush.webp` | ok | asset canônico encontrado |
 | character-sprite | `leon/angry` | `public/assets/characters/leon/angry.webp` | ok | asset canônico encontrado |
-| character-sprite | `leon/sad` | `public/assets/characters/leon/sad.webp` | missing | fallback de serious; arte final ausente |
+| character-sprite | `leon/sad` | `public/assets/characters/leon/sad.webp` | ok | asset canônico encontrado |
 | character-sprite | `leon/surprised` | `public/assets/characters/leon/surprised.webp` | ok | asset canônico encontrado |
 | character-sprite | `maya/neutral` | `public/assets/characters/maya/neutral.webp` | ok | asset canônico encontrado |
 | character-sprite | `maya/smile` | `public/assets/characters/maya/smile.webp` | ok | asset canônico encontrado |
-| character-sprite | `maya/tease` | `public/assets/characters/maya/tease.webp` | missing | fallback de smile; arte final ausente |
+| character-sprite | `maya/tease` | `public/assets/characters/maya/tease.webp` | ok | asset canônico encontrado |
 | character-sprite | `maya/serious` | `public/assets/characters/maya/serious.webp` | ok | asset canônico encontrado |
 | character-sprite | `maya/blush` | `public/assets/characters/maya/blush.webp` | ok | asset canônico encontrado |
 | character-sprite | `maya/angry` | `public/assets/characters/maya/angry.webp` | ok | asset canônico encontrado |
-| character-sprite | `maya/sad` | `public/assets/characters/maya/sad.webp` | missing | fallback de serious; arte final ausente |
+| character-sprite | `maya/sad` | `public/assets/characters/maya/sad.webp` | ok | asset canônico encontrado |
 | character-sprite | `maya/surprised` | `public/assets/characters/maya/surprised.webp` | ok | asset canônico encontrado |
 | character-sprite | `player/neutral` | `public/assets/characters/player/neutral.webp` | ok | asset canônico encontrado |
 | character-sprite | `player/smile` | `public/assets/characters/player/smile.webp` | ok | asset canônico encontrado |
-| character-sprite | `player/tease` | `public/assets/characters/player/tease.webp` | missing | fallback de smile; arte final ausente |
+| character-sprite | `player/tease` | `public/assets/characters/player/tease.webp` | ok | asset canônico encontrado |
 | character-sprite | `player/serious` | `public/assets/characters/player/serious.webp` | ok | asset canônico encontrado |
 | character-sprite | `player/blush` | `public/assets/characters/player/blush.webp` | ok | asset canônico encontrado |
 | character-sprite | `player/angry` | `public/assets/characters/player/angry.webp` | ok | asset canônico encontrado |
-| character-sprite | `player/sad` | `public/assets/characters/player/sad.webp` | missing | fallback de serious; arte final ausente |
+| character-sprite | `player/sad` | `public/assets/characters/player/sad.webp` | ok | asset canônico encontrado |
 | character-sprite | `player/surprised` | `public/assets/characters/player/surprised.webp` | ok | asset canônico encontrado |
 | character-sprite | `ravi/neutral` | `public/assets/characters/ravi/neutral.webp` | ok | asset canônico encontrado |
 | character-sprite | `ravi/smile` | `public/assets/characters/ravi/smile.webp` | ok | asset canônico encontrado |
-| character-sprite | `ravi/tease` | `public/assets/characters/ravi/tease.webp` | missing | fallback de smile; arte final ausente |
+| character-sprite | `ravi/tease` | `public/assets/characters/ravi/tease.webp` | ok | asset canônico encontrado |
 | character-sprite | `ravi/serious` | `public/assets/characters/ravi/serious.webp` | ok | asset canônico encontrado |
 | character-sprite | `ravi/blush` | `public/assets/characters/ravi/blush.webp` | ok | asset canônico encontrado |
 | character-sprite | `ravi/angry` | `public/assets/characters/ravi/angry.webp` | ok | asset canônico encontrado |
-| character-sprite | `ravi/sad` | `public/assets/characters/ravi/sad.webp` | missing | fallback de serious; arte final ausente |
+| character-sprite | `ravi/sad` | `public/assets/characters/ravi/sad.webp` | ok | asset canônico encontrado |
 | character-sprite | `ravi/surprised` | `public/assets/characters/ravi/surprised.webp` | ok | asset canônico encontrado |
 | background | `auditorium` | `public/assets/backgrounds/auditorium.webp` | ok | saída WebP canônica disponível; SVG preservado como fonte |
 | background | `cafe` | `public/assets/backgrounds/cafe.webp` | ok | saída WebP canônica disponível; SVG preservado como fonte |
@@ -119,8 +119,13 @@ Gerado em 2026-09-22T11:14:51.604Z. Fonte ativa: `src/store/gameStore.ts -> src/
 | extra | `background-02` | `public/assets/sheets/backgrounds/background-02.webp` | unused | asset auxiliar sem referência ativa detectada |
 | extra | `cg-01` | `public/assets/sheets/cg/cg-01.webp` | unused | asset auxiliar sem referência ativa detectada |
 | extra | `cg-02` | `public/assets/sheets/cg/cg-02.webp` | unused | asset auxiliar sem referência ativa detectada |
+| extra | `gael-sheet` | `public/assets/sheets/characters/gael-sheet.png` | unused | asset auxiliar sem referência ativa detectada |
 | extra | `gael-sheet` | `public/assets/sheets/characters/gael-sheet.webp` | unused | asset auxiliar sem referência ativa detectada |
+| extra | `leon-sheet` | `public/assets/sheets/characters/leon-sheet.png` | unused | asset auxiliar sem referência ativa detectada |
 | extra | `leon-sheet` | `public/assets/sheets/characters/leon-sheet.webp` | unused | asset auxiliar sem referência ativa detectada |
+| extra | `maya-sheet` | `public/assets/sheets/characters/maya-sheet.png` | unused | asset auxiliar sem referência ativa detectada |
 | extra | `maya-sheet` | `public/assets/sheets/characters/maya-sheet.webp` | unused | asset auxiliar sem referência ativa detectada |
+| extra | `player-sheet` | `public/assets/sheets/characters/player-sheet.png` | unused | asset auxiliar sem referência ativa detectada |
 | extra | `player-sheet` | `public/assets/sheets/characters/player-sheet.webp` | unused | asset auxiliar sem referência ativa detectada |
+| extra | `ravi-sheet` | `public/assets/sheets/characters/ravi-sheet.png` | unused | asset auxiliar sem referência ativa detectada |
 | extra | `ravi-sheet` | `public/assets/sheets/characters/ravi-sheet.webp` | unused | asset auxiliar sem referência ativa detectada |

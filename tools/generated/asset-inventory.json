@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T11:14:51.604Z",
+  "generatedAt": "2026-09-22T11:37:28.239Z",
   "sourceOfTruth": {
     "runtime": "src/store/gameStore.ts -> src/data/season1.json",
     "assetResolver": "src/assets.ts",
@@ -90,8 +90,8 @@
       "category": "character-sprite",
       "id": "gael/tease",
       "currentPath": "public/assets/characters/gael/tease.webp",
-      "status": "missing",
-      "notes": "fallback de smile; arte final ausente"
+      "status": "ok",
+      "notes": "asset canônico encontrado"
     },
     {
       "category": "character-sprite",
@@ -118,8 +118,8 @@
       "category": "character-sprite",
       "id": "gael/sad",
       "currentPath": "public/assets/characters/gael/sad.webp",
-      "status": "missing",
-      "notes": "fallback de serious; arte final ausente"
+      "status": "ok",
+      "notes": "asset canônico encontrado"
     },
     {
       "category": "character-sprite",
@@ -146,8 +146,8 @@
       "category": "character-sprite",
       "id": "leon/tease",
       "currentPath": "public/assets/characters/leon/tease.webp",
-      "status": "missing",
-      "notes": "fallback de smile; arte final ausente"
+      "status": "ok",
+      "notes": "asset canônico encontrado"
     },
     {
       "category": "character-sprite",
@@ -174,8 +174,8 @@
       "category": "character-sprite",
       "id": "leon/sad",
       "currentPath": "public/assets/characters/leon/sad.webp",
-      "status": "missing",
-      "notes": "fallback de serious; arte final ausente"
+      "status": "ok",
+      "notes": "asset canônico encontrado"
     },
     {
       "category": "character-sprite",
@@ -202,8 +202,8 @@
       "category": "character-sprite",
       "id": "maya/tease",
       "currentPath": "public/assets/characters/maya/tease.webp",
-      "status": "missing",
-      "notes": "fallback de smile; arte final ausente"
+      "status": "ok",
+      "notes": "asset canônico encontrado"
     },
     {
       "category": "character-sprite",
@@ -230,8 +230,8 @@
       "category": "character-sprite",
       "id": "maya/sad",
       "currentPath": "public/assets/characters/maya/sad.webp",
-      "status": "missing",
-      "notes": "fallback de serious; arte final ausente"
+      "status": "ok",
+      "notes": "asset canônico encontrado"
     },
     {
       "category": "character-sprite",
@@ -258,8 +258,8 @@
       "category": "character-sprite",
       "id": "player/tease",
       "currentPath": "public/assets/characters/player/tease.webp",
-      "status": "missing",
-      "notes": "fallback de smile; arte final ausente"
+      "status": "ok",
+      "notes": "asset canônico encontrado"
     },
     {
       "category": "character-sprite",
@@ -286,8 +286,8 @@
       "category": "character-sprite",
       "id": "player/sad",
       "currentPath": "public/assets/characters/player/sad.webp",
-      "status": "missing",
-      "notes": "fallback de serious; arte final ausente"
+      "status": "ok",
+      "notes": "asset canônico encontrado"
     },
     {
       "category": "character-sprite",
@@ -314,8 +314,8 @@
       "category": "character-sprite",
       "id": "ravi/tease",
       "currentPath": "public/assets/characters/ravi/tease.webp",
-      "status": "missing",
-      "notes": "fallback de smile; arte final ausente"
+      "status": "ok",
+      "notes": "asset canônico encontrado"
     },
     {
       "category": "character-sprite",
@@ -342,8 +342,8 @@
       "category": "character-sprite",
       "id": "ravi/sad",
       "currentPath": "public/assets/characters/ravi/sad.webp",
-      "status": "missing",
-      "notes": "fallback de serious; arte final ausente"
+      "status": "ok",
+      "notes": "asset canônico encontrado"
     },
     {
       "category": "character-sprite",
@@ -768,7 +768,21 @@
     {
       "category": "extra",
       "id": "gael-sheet",
+      "currentPath": "public/assets/sheets/characters/gael-sheet.png",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "gael-sheet",
       "currentPath": "public/assets/sheets/characters/gael-sheet.webp",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "leon-sheet",
+      "currentPath": "public/assets/sheets/characters/leon-sheet.png",
       "status": "unused",
       "notes": "asset auxiliar sem referência ativa detectada"
     },
@@ -782,6 +796,13 @@
     {
       "category": "extra",
       "id": "maya-sheet",
+      "currentPath": "public/assets/sheets/characters/maya-sheet.png",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "maya-sheet",
       "currentPath": "public/assets/sheets/characters/maya-sheet.webp",
       "status": "unused",
       "notes": "asset auxiliar sem referência ativa detectada"
@@ -789,7 +810,21 @@
     {
       "category": "extra",
       "id": "player-sheet",
+      "currentPath": "public/assets/sheets/characters/player-sheet.png",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "player-sheet",
       "currentPath": "public/assets/sheets/characters/player-sheet.webp",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "ravi-sheet",
+      "currentPath": "public/assets/sheets/characters/ravi-sheet.png",
       "status": "unused",
       "notes": "asset auxiliar sem referência ativa detectada"
     },
@@ -903,10 +938,15 @@
       "public/assets/sheets/backgrounds/background-02.webp",
       "public/assets/sheets/cg/cg-01.webp",
       "public/assets/sheets/cg/cg-02.webp",
+      "public/assets/sheets/characters/gael-sheet.png",
       "public/assets/sheets/characters/gael-sheet.webp",
+      "public/assets/sheets/characters/leon-sheet.png",
       "public/assets/sheets/characters/leon-sheet.webp",
+      "public/assets/sheets/characters/maya-sheet.png",
       "public/assets/sheets/characters/maya-sheet.webp",
+      "public/assets/sheets/characters/player-sheet.png",
       "public/assets/sheets/characters/player-sheet.webp",
+      "public/assets/sheets/characters/ravi-sheet.png",
       "public/assets/sheets/characters/ravi-sheet.webp"
     ]
   },

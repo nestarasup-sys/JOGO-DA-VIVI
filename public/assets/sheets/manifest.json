@@ -25,7 +25,7 @@
           "width": 512,
           "height": 768,
           "source": "neutral",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "smile",
@@ -34,7 +34,7 @@
           "width": 512,
           "height": 768,
           "source": "smile",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "tease",
@@ -42,8 +42,8 @@
           "y": 0,
           "width": 512,
           "height": 768,
-          "source": "smile",
-          "status": "fallback"
+          "source": "tease",
+          "status": "ai-generated"
         },
         {
           "id": "serious",
@@ -52,7 +52,7 @@
           "width": 512,
           "height": 768,
           "source": "serious",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "blush",
@@ -61,7 +61,7 @@
           "width": 512,
           "height": 768,
           "source": "blush",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "angry",
@@ -70,7 +70,7 @@
           "width": 512,
           "height": 768,
           "source": "angry",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "sad",
@@ -78,8 +78,8 @@
           "y": 768,
           "width": 512,
           "height": 768,
-          "source": "serious",
-          "status": "fallback"
+          "source": "sad",
+          "status": "ai-generated"
         },
         {
           "id": "surprised",
@@ -88,7 +88,7 @@
           "width": 512,
           "height": 768,
           "source": "surprised",
-          "status": "ok"
+          "status": "ai-generated"
         }
       ]
     },
@@ -106,7 +106,7 @@
           "width": 512,
           "height": 768,
           "source": "neutral",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "smile",
@@ -115,7 +115,7 @@
           "width": 512,
           "height": 768,
           "source": "smile",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "tease",
@@ -123,8 +123,8 @@
           "y": 0,
           "width": 512,
           "height": 768,
-          "source": "smile",
-          "status": "fallback"
+          "source": "tease",
+          "status": "ai-generated"
         },
         {
           "id": "serious",
@@ -133,7 +133,7 @@
           "width": 512,
           "height": 768,
           "source": "serious",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "blush",
@@ -142,7 +142,7 @@
           "width": 512,
           "height": 768,
           "source": "blush",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "angry",
@@ -151,7 +151,7 @@
           "width": 512,
           "height": 768,
           "source": "angry",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "sad",
@@ -159,8 +159,8 @@
           "y": 768,
           "width": 512,
           "height": 768,
-          "source": "serious",
-          "status": "fallback"
+          "source": "sad",
+          "status": "ai-generated"
         },
         {
           "id": "surprised",
@@ -169,7 +169,7 @@
           "width": 512,
           "height": 768,
           "source": "surprised",
-          "status": "ok"
+          "status": "ai-generated"
         }
       ]
     },
@@ -187,7 +187,7 @@
           "width": 512,
           "height": 768,
           "source": "neutral",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "smile",
@@ -196,7 +196,7 @@
           "width": 512,
           "height": 768,
           "source": "smile",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "tease",
@@ -204,8 +204,8 @@
           "y": 0,
           "width": 512,
           "height": 768,
-          "source": "smile",
-          "status": "fallback"
+          "source": "tease",
+          "status": "ai-generated"
         },
         {
           "id": "serious",
@@ -214,7 +214,7 @@
           "width": 512,
           "height": 768,
           "source": "serious",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "blush",
@@ -223,7 +223,7 @@
           "width": 512,
           "height": 768,
           "source": "blush",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "angry",
@@ -232,7 +232,7 @@
           "width": 512,
           "height": 768,
           "source": "angry",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "sad",
@@ -240,8 +240,8 @@
           "y": 768,
           "width": 512,
           "height": 768,
-          "source": "serious",
-          "status": "fallback"
+          "source": "sad",
+          "status": "ai-generated"
         },
         {
           "id": "surprised",
@@ -250,7 +250,7 @@
           "width": 512,
           "height": 768,
           "source": "surprised",
-          "status": "ok"
+          "status": "ai-generated"
         }
       ]
     },
@@ -268,7 +268,7 @@
           "width": 512,
           "height": 768,
           "source": "neutral",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "smile",
@@ -277,7 +277,7 @@
           "width": 512,
           "height": 768,
           "source": "smile",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "tease",
@@ -285,8 +285,8 @@
           "y": 0,
           "width": 512,
           "height": 768,
-          "source": "smile",
-          "status": "fallback"
+          "source": "tease",
+          "status": "ai-generated"
         },
         {
           "id": "serious",
@@ -295,7 +295,7 @@
           "width": 512,
           "height": 768,
           "source": "serious",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "blush",
@@ -304,7 +304,7 @@
           "width": 512,
           "height": 768,
           "source": "blush",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "angry",
@@ -313,7 +313,7 @@
           "width": 512,
           "height": 768,
           "source": "angry",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "sad",
@@ -321,8 +321,8 @@
           "y": 768,
           "width": 512,
           "height": 768,
-          "source": "serious",
-          "status": "fallback"
+          "source": "sad",
+          "status": "ai-generated"
         },
         {
           "id": "surprised",
@@ -331,7 +331,7 @@
           "width": 512,
           "height": 768,
           "source": "surprised",
-          "status": "ok"
+          "status": "ai-generated"
         }
       ]
     },
@@ -349,7 +349,7 @@
           "width": 512,
           "height": 768,
           "source": "neutral",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "smile",
@@ -358,7 +358,7 @@
           "width": 512,
           "height": 768,
           "source": "smile",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "tease",
@@ -366,8 +366,8 @@
           "y": 0,
           "width": 512,
           "height": 768,
-          "source": "smile",
-          "status": "fallback"
+          "source": "tease",
+          "status": "ai-generated"
         },
         {
           "id": "serious",
@@ -376,7 +376,7 @@
           "width": 512,
           "height": 768,
           "source": "serious",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "blush",
@@ -385,7 +385,7 @@
           "width": 512,
           "height": 768,
           "source": "blush",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "angry",
@@ -394,7 +394,7 @@
           "width": 512,
           "height": 768,
           "source": "angry",
-          "status": "ok"
+          "status": "ai-generated"
         },
         {
           "id": "sad",
@@ -402,8 +402,8 @@
           "y": 768,
           "width": 512,
           "height": 768,
-          "source": "serious",
-          "status": "fallback"
+          "source": "sad",
+          "status": "ai-generated"
         },
         {
           "id": "surprised",
@@ -412,7 +412,7 @@
           "width": 512,
           "height": 768,
           "source": "surprised",
-          "status": "ok"
+          "status": "ai-generated"
         }
       ]
     },

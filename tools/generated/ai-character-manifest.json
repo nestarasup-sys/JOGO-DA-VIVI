@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "source": "AI-generated 4x2 sheets",
+  "cell": {
+    "width": 512,
+    "height": 768
+  },
+  "characters": {
+    "gael": {
+      "input": "tools/incoming/ai-character-sheets/gael-sheet.png",
+      "output": "tools/generated/ai-character-sheets/gael-sheet.png",
+      "expressions": [
+        "neutral",
+        "smile",
+        "tease",
+        "serious",
+        "blush",
+        "angry",
+        "sad",
+        "surprised"
+      ]
+    },
+    "leon": {
+      "input": "tools/incoming/ai-character-sheets/leon-sheet.png",
+      "output": "tools/generated/ai-character-sheets/leon-sheet.png",
+      "expressions": [
+        "neutral",
+        "smile",
+        "tease",
+        "serious",
+        "blush",
+        "angry",
+        "sad",
+        "surprised"
+      ]
+    },
+    "ravi": {
+      "input": "tools/incoming/ai-character-sheets/ravi-sheet.png",
+      "output": "tools/generated/ai-character-sheets/ravi-sheet.png",
+      "expressions": [
+        "neutral",
+        "smile",
+        "tease",
+        "serious",
+        "blush",
+        "angry",
+        "sad",
+        "surprised"
+      ]
+    },
+    "maya": {
+      "input": "tools/incoming/ai-character-sheets/maya-sheet.png",
+      "output": "tools/generated/ai-character-sheets/maya-sheet.png",
+      "expressions": [
+        "neutral",
+        "smile",
+        "tease",
+        "serious",
+        "blush",
+        "angry",
+        "sad",
+        "surprised"
+      ]
+    },
+    "player": {
+      "input": "tools/incoming/ai-character-sheets/player-sheet.png",
+      "output": "tools/generated/ai-character-sheets/player-sheet.png",
+      "expressions": [
+        "neutral",
+        "smile",
+        "tease",
+        "serious",
+        "blush",
+        "angry",
+        "sad",
+        "surprised"
+      ]
+    }
+  }
+}
