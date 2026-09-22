@@ -1,0 +1,3 @@
+import {Header} from './Episodes';import {useGame} from '../store/gameStore';import {cg} from '../assets';
+const ids=['cg_intro','cg_rain','cg_rooftop','cg_festival','cg_library','cg_studio','cg_photo','cg_confession','cg_gael','cg_leon','cg_ravi','cg_solo'];
+export function Gallery(){const g=useGame();return <><Header title="Galeria" text={`${g.unlockedCG.length}/${ids.length} memórias desbloqueadas.`}/><div className="gallery">{ids.map(id=><article className={g.unlockedCG.includes(id)?'':'locked'} key={id}><img src={cg(id)}/><b>{g.unlockedCG.includes(id)?id.replace('cg_','').toUpperCase():'MEMÓRIA BLOQUEADA'}</b></article>)}</div></>}

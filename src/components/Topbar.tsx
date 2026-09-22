@@ -1,0 +1,2 @@
+import {Save,Star} from 'lucide-react';import {useGame} from '../store/gameStore';
+export function Topbar(){const s=useGame();return <header className="topbar"><div><b>Entre Nós: <em>Aurora</em></b><small>Episódio {s.episode} • Temporada 1</small></div><div className="resources"><span><Star size={15}/> {s.coins}</span><span><Save size={15}/> autosave</span><i>{s.name[0]?.toUpperCase()}</i></div></header>}

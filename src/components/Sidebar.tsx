@@ -1,0 +1,3 @@
+import {BookOpen,Map,MessageCircle,Sparkles,Heart,Shirt,Images,User,Braces,Settings,Home} from 'lucide-react';
+const items=[['home',Home],['episodes',BookOpen],['map',Map],['phone',MessageCircle],['events',Sparkles],['relations',Heart],['wardrobe',Shirt],['gallery',Images],['profile',User],['studio',Braces],['settings',Settings]] as const;
+export function Sidebar({page,setPage}:{page:string;setPage:(x:string)=>void}){return <aside className="sidebar"><div className="brandMark">A</div>{items.map(([id,Icon])=><button key={id} className={page===id?'navBtn active':'navBtn'} onClick={()=>setPage(id)} title={id}><Icon size={20}/></button>)}</aside>}
