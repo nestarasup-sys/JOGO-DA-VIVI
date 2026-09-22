@@ -1,84 +1,42 @@
 # Entre Nós: Aurora — V3 Ultra
 
-Visual novel/otome original em HTML5 moderno. Inspirada no **formato** de jogos episódicos de romance, mas com universo, personagens, arte-base, sistemas e narrativa próprios.
+Visual novel/otome original inspirado na estrutura de jogos episódicos de romance, sem reutilizar personagens, textos ou interface de terceiros.
 
-## Rodar no Windows sem configurar nada
+## V3
 
-Baixe apenas `AURORA_SETUP_UPDATE_RUN.bat` para uma pasta dedicada e execute.
+- React 19 + TypeScript + Vite.
+- PWA/offline.
+- engine narrativa data-driven em JSON.
+- 10 episódios completos.
+- rotas de Gael, Leon e Ravi.
+- afinidade, traits, flags, eventos, mapa, celular, guarda-roupa e galeria.
+- Studio JSON dentro do jogo.
+- persistência automática com Zustand.
+- pipeline de sprite sheets com `sharp`.
+- testes do motor com Vitest.
+- build e validação automatizados.
+- `INSTALAR_E_ATUALIZAR.bat` instala Git/Node se necessário, atualiza o repo, instala dependências, processa assets, testa, builda e abre o dev server.
 
-Ele:
-1. instala Git, Node LTS e Python se necessário;
-2. clona/atualiza este repositório;
-3. instala dependências;
-4. instala as ferramentas de assets;
-5. valida a campanha;
-6. compila;
-7. abre o servidor local.
+## Windows
 
-Depois, dentro do projeto, `START_AURORA.bat` inicia rapidamente.
+Coloque `INSTALAR_E_ATUALIZAR.bat` em uma pasta dedicada e execute. Na primeira vez ele clona o repositório; nas próximas, atualiza com `git pull`.
 
-## Desenvolvimento manual
+## Desenvolvimento
 
 ```bash
 npm install
-npm run validate:story
+npm run assets:slice
 npm run dev
 ```
 
-Build:
+Validação completa:
 
 ```bash
-npm run build
+npm run check
 ```
-
-## V3 Ultra
-
-- 10 episódios.
-- 3 rotas românticas: Gael, Leon e Ravi.
-- Afinidade + Empatia/Coragem/Humor.
-- Route-lock, CGs e conquistas.
-- Celular/mensagens.
-- Mapa e calendário.
-- Eventos.
-- Guarda-roupa e Lúmens.
-- Galeria.
-- Auto Mode + histórico.
-- Save automático + 3 slots + export/import.
-- Aurora Studio: editor JSON dentro do jogo.
-- PWA.
-- Assets offline.
-- GitHub Actions.
-- Pipeline de character sheets → sprites/WebP.
-
-## Estrutura
-
-```text
-src/
-  components/
-  engine/
-  hooks/
-  screens/
-  store/
-  types/
-public/
-  assets/
-  content/story.json
-tools/
-scripts/
-docs/
-.github/workflows/
-```
-
-Leia:
-- [Arquitetura](docs/ARCHITECTURE.md)
-- [Pipeline de assets](docs/ASSET_PIPELINE.md)
-- [Story Schema V3](docs/STORY_SCHEMA.md)
-- [Escopo da V3 Ultra](docs/V3_ULTRA_SCOPE.md)
 
 ## Assets
 
-Os SVGs atuais são concept assets originais e totalmente funcionais. A estrutura foi feita para trocar cada um por PNG/WebP final em estilo manhwa/anime sem alterar o motor.
+As folhas fonte ficam em `assets/sheets/` e são descritas por `assets/sheets/manifest.json`. `npm run assets:slice` recorta automaticamente para `public/assets/...` em WebP.
 
-## Repositório
-
-Branch principal: `main`.
+As folhas atuais são placeholders de produção e podem ser substituídas por artes finais sem alterar o motor.

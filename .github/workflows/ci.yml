@@ -1,33 +1,21 @@
-name: Aurora V3 CI
-
+name: V3 CI
 on:
   push:
-    branches: [main]
+    branches: [main, v3-ultra]
   pull_request:
     branches: [main]
-
 jobs:
-  validate-build:
+  build-test:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          lfs: true
-      - name: Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Install
-        run: npm install --no-audit --no-fund
-      - name: Validate story
-        run: npm run validate:story
-      - name: Build
-        run: npm run build
-      - name: Upload dist
-        uses: actions/upload-artifact@v4
+      - run: npm install
+      - run: npm run assets:slice
+      - run: npm run check
+      - uses: actions/upload-artifact@v4
         with:
           name: aurora-v3-dist
-          path: dist/
-          retention-days: 14
+          path: dist
