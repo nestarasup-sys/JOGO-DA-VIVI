@@ -1,0 +1,47 @@
+{
+  "characters": {
+    "gael": {
+      "tease": "smile",
+      "sad": "serious"
+    },
+    "leon": {
+      "tease": "smile",
+      "sad": "serious"
+    },
+    "maya": {
+      "tease": "smile",
+      "sad": "serious"
+    },
+    "player": {
+      "tease": "smile",
+      "sad": "serious"
+    },
+    "ravi": {
+      "tease": "smile",
+      "sad": "serious"
+    }
+  },
+  "backgrounds": {
+    "downtown": "station.svg",
+    "festival": "festival-night.svg",
+    "garden": "park.svg",
+    "library": "campus.svg",
+    "night": "festival-night.svg",
+    "rain": "station.svg",
+    "room": "studio.svg"
+  },
+  "cgs": {
+    "cg_confession": "route-confession.svg",
+    "cg_festival": "leon-festival.svg",
+    "cg_gael": "finale-romance.svg",
+    "cg_intro": "finale-aurora.svg",
+    "cg_leon": "leon-festival.svg",
+    "cg_library": "finale-growth.svg",
+    "cg_photo": "ravi-lanterns.svg",
+    "cg_rain": "route-confession.svg",
+    "cg_ravi": "ravi-auditorium.svg",
+    "cg_rooftop": "finale-growth.svg",
+    "cg_solo": "finale-aurora.svg",
+    "cg_studio": "gael-studio.svg"
+  }
+}

@@ -1,0 +1,624 @@
+{
+  "version": 1,
+  "cellSize": {
+    "character": {
+      "width": 512,
+      "height": 768
+    },
+    "preview": {
+      "width": 640,
+      "height": 360
+    }
+  },
+  "sheets": [
+    {
+      "category": "characters",
+      "id": "gael",
+      "file": "public/assets/sheets/characters/gael-sheet.webp",
+      "columns": 4,
+      "rows": 2,
+      "items": [
+        {
+          "id": "neutral",
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "neutral",
+          "status": "ok"
+        },
+        {
+          "id": "smile",
+          "x": 512,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "smile",
+          "status": "ok"
+        },
+        {
+          "id": "tease",
+          "x": 1024,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "smile",
+          "status": "fallback"
+        },
+        {
+          "id": "serious",
+          "x": 1536,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "serious",
+          "status": "ok"
+        },
+        {
+          "id": "blush",
+          "x": 0,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "blush",
+          "status": "ok"
+        },
+        {
+          "id": "angry",
+          "x": 512,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "angry",
+          "status": "ok"
+        },
+        {
+          "id": "sad",
+          "x": 1024,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "serious",
+          "status": "fallback"
+        },
+        {
+          "id": "surprised",
+          "x": 1536,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "surprised",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "category": "characters",
+      "id": "leon",
+      "file": "public/assets/sheets/characters/leon-sheet.webp",
+      "columns": 4,
+      "rows": 2,
+      "items": [
+        {
+          "id": "neutral",
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "neutral",
+          "status": "ok"
+        },
+        {
+          "id": "smile",
+          "x": 512,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "smile",
+          "status": "ok"
+        },
+        {
+          "id": "tease",
+          "x": 1024,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "smile",
+          "status": "fallback"
+        },
+        {
+          "id": "serious",
+          "x": 1536,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "serious",
+          "status": "ok"
+        },
+        {
+          "id": "blush",
+          "x": 0,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "blush",
+          "status": "ok"
+        },
+        {
+          "id": "angry",
+          "x": 512,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "angry",
+          "status": "ok"
+        },
+        {
+          "id": "sad",
+          "x": 1024,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "serious",
+          "status": "fallback"
+        },
+        {
+          "id": "surprised",
+          "x": 1536,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "surprised",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "category": "characters",
+      "id": "maya",
+      "file": "public/assets/sheets/characters/maya-sheet.webp",
+      "columns": 4,
+      "rows": 2,
+      "items": [
+        {
+          "id": "neutral",
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "neutral",
+          "status": "ok"
+        },
+        {
+          "id": "smile",
+          "x": 512,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "smile",
+          "status": "ok"
+        },
+        {
+          "id": "tease",
+          "x": 1024,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "smile",
+          "status": "fallback"
+        },
+        {
+          "id": "serious",
+          "x": 1536,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "serious",
+          "status": "ok"
+        },
+        {
+          "id": "blush",
+          "x": 0,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "blush",
+          "status": "ok"
+        },
+        {
+          "id": "angry",
+          "x": 512,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "angry",
+          "status": "ok"
+        },
+        {
+          "id": "sad",
+          "x": 1024,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "serious",
+          "status": "fallback"
+        },
+        {
+          "id": "surprised",
+          "x": 1536,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "surprised",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "category": "characters",
+      "id": "player",
+      "file": "public/assets/sheets/characters/player-sheet.webp",
+      "columns": 4,
+      "rows": 2,
+      "items": [
+        {
+          "id": "neutral",
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "neutral",
+          "status": "ok"
+        },
+        {
+          "id": "smile",
+          "x": 512,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "smile",
+          "status": "ok"
+        },
+        {
+          "id": "tease",
+          "x": 1024,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "smile",
+          "status": "fallback"
+        },
+        {
+          "id": "serious",
+          "x": 1536,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "serious",
+          "status": "ok"
+        },
+        {
+          "id": "blush",
+          "x": 0,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "blush",
+          "status": "ok"
+        },
+        {
+          "id": "angry",
+          "x": 512,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "angry",
+          "status": "ok"
+        },
+        {
+          "id": "sad",
+          "x": 1024,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "serious",
+          "status": "fallback"
+        },
+        {
+          "id": "surprised",
+          "x": 1536,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "surprised",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "category": "characters",
+      "id": "ravi",
+      "file": "public/assets/sheets/characters/ravi-sheet.webp",
+      "columns": 4,
+      "rows": 2,
+      "items": [
+        {
+          "id": "neutral",
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "neutral",
+          "status": "ok"
+        },
+        {
+          "id": "smile",
+          "x": 512,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "smile",
+          "status": "ok"
+        },
+        {
+          "id": "tease",
+          "x": 1024,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "smile",
+          "status": "fallback"
+        },
+        {
+          "id": "serious",
+          "x": 1536,
+          "y": 0,
+          "width": 512,
+          "height": 768,
+          "source": "serious",
+          "status": "ok"
+        },
+        {
+          "id": "blush",
+          "x": 0,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "blush",
+          "status": "ok"
+        },
+        {
+          "id": "angry",
+          "x": 512,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "angry",
+          "status": "ok"
+        },
+        {
+          "id": "sad",
+          "x": 1024,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "serious",
+          "status": "fallback"
+        },
+        {
+          "id": "surprised",
+          "x": 1536,
+          "y": 768,
+          "width": 512,
+          "height": 768,
+          "source": "surprised",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "category": "backgrounds",
+      "page": 1,
+      "file": "public/assets/sheets/backgrounds/background-01.webp",
+      "columns": 4,
+      "rows": 2,
+      "items": [
+        {
+          "id": "auditorium",
+          "x": 0,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "cafe",
+          "x": 640,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "campus",
+          "x": 1280,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "downtown",
+          "x": 1920,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "festival",
+          "x": 0,
+          "y": 360,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "garden",
+          "x": 640,
+          "y": 360,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "library",
+          "x": 1280,
+          "y": 360,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "night",
+          "x": 1920,
+          "y": 360,
+          "width": 640,
+          "height": 360
+        }
+      ]
+    },
+    {
+      "category": "backgrounds",
+      "page": 2,
+      "file": "public/assets/sheets/backgrounds/background-02.webp",
+      "columns": 4,
+      "rows": 2,
+      "items": [
+        {
+          "id": "rain",
+          "x": 0,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "rooftop",
+          "x": 640,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "room",
+          "x": 1280,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "studio",
+          "x": 1920,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        }
+      ]
+    },
+    {
+      "category": "cg",
+      "page": 1,
+      "file": "public/assets/sheets/cg/cg-01.webp",
+      "columns": 4,
+      "rows": 2,
+      "items": [
+        {
+          "id": "cg_confession",
+          "x": 0,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "cg_festival",
+          "x": 640,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "cg_gael",
+          "x": 1280,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "cg_intro",
+          "x": 1920,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "cg_leon",
+          "x": 0,
+          "y": 360,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "cg_library",
+          "x": 640,
+          "y": 360,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "cg_photo",
+          "x": 1280,
+          "y": 360,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "cg_rain",
+          "x": 1920,
+          "y": 360,
+          "width": 640,
+          "height": 360
+        }
+      ]
+    },
+    {
+      "category": "cg",
+      "page": 2,
+      "file": "public/assets/sheets/cg/cg-02.webp",
+      "columns": 4,
+      "rows": 2,
+      "items": [
+        {
+          "id": "cg_ravi",
+          "x": 0,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "cg_rooftop",
+          "x": 640,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "cg_solo",
+          "x": 1280,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        },
+        {
+          "id": "cg_studio",
+          "x": 1920,
+          "y": 0,
+          "width": 640,
+          "height": 360
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,975 @@
+{
+  "generatedAt": "2026-09-22T11:14:51.604Z",
+  "sourceOfTruth": {
+    "runtime": "src/store/gameStore.ts -> src/data/season1.json",
+    "assetResolver": "src/assets.ts",
+    "excludedArchitecture": "public/content/story.json + src/screens/*"
+  },
+  "counts": {
+    "characters": 5,
+    "expressions": 8,
+    "backgrounds": 12,
+    "cgs": 12,
+    "sheets": 9
+  },
+  "active": {
+    "characters": [
+      "gael",
+      "leon",
+      "maya",
+      "player",
+      "ravi"
+    ],
+    "expressions": [
+      "neutral",
+      "smile",
+      "tease",
+      "serious",
+      "blush",
+      "angry",
+      "sad",
+      "surprised"
+    ],
+    "backgrounds": [
+      "auditorium",
+      "cafe",
+      "campus",
+      "downtown",
+      "festival",
+      "garden",
+      "library",
+      "night",
+      "rain",
+      "rooftop",
+      "room",
+      "studio"
+    ],
+    "cgs": [
+      "cg_confession",
+      "cg_festival",
+      "cg_gael",
+      "cg_intro",
+      "cg_leon",
+      "cg_library",
+      "cg_photo",
+      "cg_rain",
+      "cg_ravi",
+      "cg_rooftop",
+      "cg_solo",
+      "cg_studio"
+    ]
+  },
+  "declaredButNotActive": [
+    "vivi",
+    "iris"
+  ],
+  "sourceCharacterSheets": [
+    "public/assets/characters/gael-sheet.svg",
+    "public/assets/characters/iris-sheet.svg",
+    "public/assets/characters/leon-sheet.svg",
+    "public/assets/characters/maya-sheet.svg",
+    "public/assets/characters/ravi-sheet.svg",
+    "public/assets/characters/vivi-sheet.svg"
+  ],
+  "entries": [
+    {
+      "category": "character-sprite",
+      "id": "gael/neutral",
+      "currentPath": "public/assets/characters/gael/neutral.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "gael/smile",
+      "currentPath": "public/assets/characters/gael/smile.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "gael/tease",
+      "currentPath": "public/assets/characters/gael/tease.webp",
+      "status": "missing",
+      "notes": "fallback de smile; arte final ausente"
+    },
+    {
+      "category": "character-sprite",
+      "id": "gael/serious",
+      "currentPath": "public/assets/characters/gael/serious.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "gael/blush",
+      "currentPath": "public/assets/characters/gael/blush.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "gael/angry",
+      "currentPath": "public/assets/characters/gael/angry.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "gael/sad",
+      "currentPath": "public/assets/characters/gael/sad.webp",
+      "status": "missing",
+      "notes": "fallback de serious; arte final ausente"
+    },
+    {
+      "category": "character-sprite",
+      "id": "gael/surprised",
+      "currentPath": "public/assets/characters/gael/surprised.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "leon/neutral",
+      "currentPath": "public/assets/characters/leon/neutral.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "leon/smile",
+      "currentPath": "public/assets/characters/leon/smile.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "leon/tease",
+      "currentPath": "public/assets/characters/leon/tease.webp",
+      "status": "missing",
+      "notes": "fallback de smile; arte final ausente"
+    },
+    {
+      "category": "character-sprite",
+      "id": "leon/serious",
+      "currentPath": "public/assets/characters/leon/serious.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "leon/blush",
+      "currentPath": "public/assets/characters/leon/blush.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "leon/angry",
+      "currentPath": "public/assets/characters/leon/angry.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "leon/sad",
+      "currentPath": "public/assets/characters/leon/sad.webp",
+      "status": "missing",
+      "notes": "fallback de serious; arte final ausente"
+    },
+    {
+      "category": "character-sprite",
+      "id": "leon/surprised",
+      "currentPath": "public/assets/characters/leon/surprised.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "maya/neutral",
+      "currentPath": "public/assets/characters/maya/neutral.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "maya/smile",
+      "currentPath": "public/assets/characters/maya/smile.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "maya/tease",
+      "currentPath": "public/assets/characters/maya/tease.webp",
+      "status": "missing",
+      "notes": "fallback de smile; arte final ausente"
+    },
+    {
+      "category": "character-sprite",
+      "id": "maya/serious",
+      "currentPath": "public/assets/characters/maya/serious.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "maya/blush",
+      "currentPath": "public/assets/characters/maya/blush.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "maya/angry",
+      "currentPath": "public/assets/characters/maya/angry.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "maya/sad",
+      "currentPath": "public/assets/characters/maya/sad.webp",
+      "status": "missing",
+      "notes": "fallback de serious; arte final ausente"
+    },
+    {
+      "category": "character-sprite",
+      "id": "maya/surprised",
+      "currentPath": "public/assets/characters/maya/surprised.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "player/neutral",
+      "currentPath": "public/assets/characters/player/neutral.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "player/smile",
+      "currentPath": "public/assets/characters/player/smile.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "player/tease",
+      "currentPath": "public/assets/characters/player/tease.webp",
+      "status": "missing",
+      "notes": "fallback de smile; arte final ausente"
+    },
+    {
+      "category": "character-sprite",
+      "id": "player/serious",
+      "currentPath": "public/assets/characters/player/serious.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "player/blush",
+      "currentPath": "public/assets/characters/player/blush.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "player/angry",
+      "currentPath": "public/assets/characters/player/angry.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "player/sad",
+      "currentPath": "public/assets/characters/player/sad.webp",
+      "status": "missing",
+      "notes": "fallback de serious; arte final ausente"
+    },
+    {
+      "category": "character-sprite",
+      "id": "player/surprised",
+      "currentPath": "public/assets/characters/player/surprised.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "ravi/neutral",
+      "currentPath": "public/assets/characters/ravi/neutral.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "ravi/smile",
+      "currentPath": "public/assets/characters/ravi/smile.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "ravi/tease",
+      "currentPath": "public/assets/characters/ravi/tease.webp",
+      "status": "missing",
+      "notes": "fallback de smile; arte final ausente"
+    },
+    {
+      "category": "character-sprite",
+      "id": "ravi/serious",
+      "currentPath": "public/assets/characters/ravi/serious.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "ravi/blush",
+      "currentPath": "public/assets/characters/ravi/blush.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "ravi/angry",
+      "currentPath": "public/assets/characters/ravi/angry.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "character-sprite",
+      "id": "ravi/sad",
+      "currentPath": "public/assets/characters/ravi/sad.webp",
+      "status": "missing",
+      "notes": "fallback de serious; arte final ausente"
+    },
+    {
+      "category": "character-sprite",
+      "id": "ravi/surprised",
+      "currentPath": "public/assets/characters/ravi/surprised.webp",
+      "status": "ok",
+      "notes": "asset canônico encontrado"
+    },
+    {
+      "category": "background",
+      "id": "auditorium",
+      "currentPath": "public/assets/backgrounds/auditorium.webp",
+      "status": "ok",
+      "notes": "saída WebP canônica disponível; SVG preservado como fonte"
+    },
+    {
+      "category": "background",
+      "id": "cafe",
+      "currentPath": "public/assets/backgrounds/cafe.webp",
+      "status": "ok",
+      "notes": "saída WebP canônica disponível; SVG preservado como fonte"
+    },
+    {
+      "category": "background",
+      "id": "campus",
+      "currentPath": "public/assets/backgrounds/campus.webp",
+      "status": "ok",
+      "notes": "saída WebP canônica disponível; SVG preservado como fonte"
+    },
+    {
+      "category": "background",
+      "id": "downtown",
+      "currentPath": "public/assets/backgrounds/downtown.webp",
+      "status": "missing",
+      "notes": "fallback de station.svg; arte final ausente"
+    },
+    {
+      "category": "background",
+      "id": "festival",
+      "currentPath": "public/assets/backgrounds/festival.webp",
+      "status": "missing",
+      "notes": "fallback de festival-night.svg; arte final ausente"
+    },
+    {
+      "category": "background",
+      "id": "garden",
+      "currentPath": "public/assets/backgrounds/garden.webp",
+      "status": "missing",
+      "notes": "fallback de park.svg; arte final ausente"
+    },
+    {
+      "category": "background",
+      "id": "library",
+      "currentPath": "public/assets/backgrounds/library.webp",
+      "status": "missing",
+      "notes": "fallback de campus.svg; arte final ausente"
+    },
+    {
+      "category": "background",
+      "id": "night",
+      "currentPath": "public/assets/backgrounds/night.webp",
+      "status": "missing",
+      "notes": "fallback de festival-night.svg; arte final ausente"
+    },
+    {
+      "category": "background",
+      "id": "rain",
+      "currentPath": "public/assets/backgrounds/rain.webp",
+      "status": "missing",
+      "notes": "fallback de station.svg; arte final ausente"
+    },
+    {
+      "category": "background",
+      "id": "rooftop",
+      "currentPath": "public/assets/backgrounds/rooftop.webp",
+      "status": "ok",
+      "notes": "saída WebP canônica disponível; SVG preservado como fonte"
+    },
+    {
+      "category": "background",
+      "id": "room",
+      "currentPath": "public/assets/backgrounds/room.webp",
+      "status": "missing",
+      "notes": "fallback de studio.svg; arte final ausente"
+    },
+    {
+      "category": "background",
+      "id": "studio",
+      "currentPath": "public/assets/backgrounds/studio.webp",
+      "status": "ok",
+      "notes": "saída WebP canônica disponível; SVG preservado como fonte"
+    },
+    {
+      "category": "cg",
+      "id": "cg_confession",
+      "currentPath": "public/assets/cg/cg_confession.webp",
+      "status": "missing",
+      "notes": "fallback de route-confession.svg; arte final ausente"
+    },
+    {
+      "category": "cg",
+      "id": "cg_festival",
+      "currentPath": "public/assets/cg/cg_festival.webp",
+      "status": "missing",
+      "notes": "fallback de leon-festival.svg; arte final ausente"
+    },
+    {
+      "category": "cg",
+      "id": "cg_gael",
+      "currentPath": "public/assets/cg/cg_gael.webp",
+      "status": "missing",
+      "notes": "fallback de finale-romance.svg; arte final ausente"
+    },
+    {
+      "category": "cg",
+      "id": "cg_intro",
+      "currentPath": "public/assets/cg/cg_intro.webp",
+      "status": "missing",
+      "notes": "fallback de finale-aurora.svg; arte final ausente"
+    },
+    {
+      "category": "cg",
+      "id": "cg_leon",
+      "currentPath": "public/assets/cg/cg_leon.webp",
+      "status": "missing",
+      "notes": "fallback de leon-festival.svg; arte final ausente"
+    },
+    {
+      "category": "cg",
+      "id": "cg_library",
+      "currentPath": "public/assets/cg/cg_library.webp",
+      "status": "missing",
+      "notes": "fallback de finale-growth.svg; arte final ausente"
+    },
+    {
+      "category": "cg",
+      "id": "cg_photo",
+      "currentPath": "public/assets/cg/cg_photo.webp",
+      "status": "missing",
+      "notes": "fallback de ravi-lanterns.svg; arte final ausente"
+    },
+    {
+      "category": "cg",
+      "id": "cg_rain",
+      "currentPath": "public/assets/cg/cg_rain.webp",
+      "status": "missing",
+      "notes": "fallback de route-confession.svg; arte final ausente"
+    },
+    {
+      "category": "cg",
+      "id": "cg_ravi",
+      "currentPath": "public/assets/cg/cg_ravi.webp",
+      "status": "missing",
+      "notes": "fallback de ravi-auditorium.svg; arte final ausente"
+    },
+    {
+      "category": "cg",
+      "id": "cg_rooftop",
+      "currentPath": "public/assets/cg/cg_rooftop.webp",
+      "status": "missing",
+      "notes": "fallback de finale-growth.svg; arte final ausente"
+    },
+    {
+      "category": "cg",
+      "id": "cg_solo",
+      "currentPath": "public/assets/cg/cg_solo.webp",
+      "status": "missing",
+      "notes": "fallback de finale-aurora.svg; arte final ausente"
+    },
+    {
+      "category": "cg",
+      "id": "cg_studio",
+      "currentPath": "public/assets/cg/cg_studio.webp",
+      "status": "missing",
+      "notes": "fallback de gael-studio.svg; arte final ausente"
+    },
+    {
+      "category": "background",
+      "id": "auditorium",
+      "currentPath": "public/assets/backgrounds/auditorium.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "background",
+      "id": "cafe",
+      "currentPath": "public/assets/backgrounds/cafe.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "background",
+      "id": "campus",
+      "currentPath": "public/assets/backgrounds/campus.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "background",
+      "id": "council",
+      "currentPath": "public/assets/backgrounds/council.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "background",
+      "id": "festival-day",
+      "currentPath": "public/assets/backgrounds/festival-day.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "background",
+      "id": "festival-night",
+      "currentPath": "public/assets/backgrounds/festival-night.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "background",
+      "id": "park",
+      "currentPath": "public/assets/backgrounds/park.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "background",
+      "id": "rooftop",
+      "currentPath": "public/assets/backgrounds/rooftop.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "background",
+      "id": "station",
+      "currentPath": "public/assets/backgrounds/station.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "background",
+      "id": "studio",
+      "currentPath": "public/assets/backgrounds/studio.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "background",
+      "id": "sunrise",
+      "currentPath": "public/assets/backgrounds/sunrise.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "cg",
+      "id": "finale-aurora",
+      "currentPath": "public/assets/cg/finale-aurora.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "cg",
+      "id": "finale-growth",
+      "currentPath": "public/assets/cg/finale-growth.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "cg",
+      "id": "finale-romance",
+      "currentPath": "public/assets/cg/finale-romance.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "cg",
+      "id": "gael-studio",
+      "currentPath": "public/assets/cg/gael-studio.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "cg",
+      "id": "leon-festival",
+      "currentPath": "public/assets/cg/leon-festival.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "cg",
+      "id": "ravi-auditorium",
+      "currentPath": "public/assets/cg/ravi-auditorium.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "cg",
+      "id": "ravi-lanterns",
+      "currentPath": "public/assets/cg/ravi-lanterns.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "cg",
+      "id": "route-confession",
+      "currentPath": "public/assets/cg/route-confession.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "extra",
+      "id": "gael-sheet",
+      "currentPath": "public/assets/characters/gael-sheet.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "extra",
+      "id": "iris-sheet",
+      "currentPath": "public/assets/characters/iris-sheet.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "extra",
+      "id": "leon-sheet",
+      "currentPath": "public/assets/characters/leon-sheet.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "extra",
+      "id": "maya-sheet",
+      "currentPath": "public/assets/characters/maya-sheet.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "extra",
+      "id": "ravi-sheet",
+      "currentPath": "public/assets/characters/ravi-sheet.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "extra",
+      "id": "vivi-sheet",
+      "currentPath": "public/assets/characters/vivi-sheet.svg",
+      "status": "unused",
+      "notes": "arquivo presente, mas não usado pelo runtime ativo"
+    },
+    {
+      "category": "extra",
+      "id": "gael-sheet",
+      "currentPath": "public/assets/characters/gael-sheet.svg",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "iris-sheet",
+      "currentPath": "public/assets/characters/iris-sheet.svg",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "leon-sheet",
+      "currentPath": "public/assets/characters/leon-sheet.svg",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "maya-sheet",
+      "currentPath": "public/assets/characters/maya-sheet.svg",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "ravi-sheet",
+      "currentPath": "public/assets/characters/ravi-sheet.svg",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "vivi-sheet",
+      "currentPath": "public/assets/characters/vivi-sheet.svg",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "background-01",
+      "currentPath": "public/assets/sheets/backgrounds/background-01.webp",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "background-02",
+      "currentPath": "public/assets/sheets/backgrounds/background-02.webp",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "cg-01",
+      "currentPath": "public/assets/sheets/cg/cg-01.webp",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "cg-02",
+      "currentPath": "public/assets/sheets/cg/cg-02.webp",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "gael-sheet",
+      "currentPath": "public/assets/sheets/characters/gael-sheet.webp",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "leon-sheet",
+      "currentPath": "public/assets/sheets/characters/leon-sheet.webp",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "maya-sheet",
+      "currentPath": "public/assets/sheets/characters/maya-sheet.webp",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "player-sheet",
+      "currentPath": "public/assets/sheets/characters/player-sheet.webp",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    },
+    {
+      "category": "extra",
+      "id": "ravi-sheet",
+      "currentPath": "public/assets/sheets/characters/ravi-sheet.webp",
+      "status": "unused",
+      "notes": "asset auxiliar sem referência ativa detectada"
+    }
+  ],
+  "files": {
+    "character-sprite": [
+      "public/assets/characters/gael/angry.webp",
+      "public/assets/characters/gael/blush.webp",
+      "public/assets/characters/gael/neutral.webp",
+      "public/assets/characters/gael/sad.webp",
+      "public/assets/characters/gael/serious.webp",
+      "public/assets/characters/gael/smile.webp",
+      "public/assets/characters/gael/surprised.webp",
+      "public/assets/characters/gael/tease.webp",
+      "public/assets/characters/leon/angry.webp",
+      "public/assets/characters/leon/blush.webp",
+      "public/assets/characters/leon/neutral.webp",
+      "public/assets/characters/leon/sad.webp",
+      "public/assets/characters/leon/serious.webp",
+      "public/assets/characters/leon/smile.webp",
+      "public/assets/characters/leon/surprised.webp",
+      "public/assets/characters/leon/tease.webp",
+      "public/assets/characters/maya/angry.webp",
+      "public/assets/characters/maya/blush.webp",
+      "public/assets/characters/maya/neutral.webp",
+      "public/assets/characters/maya/sad.webp",
+      "public/assets/characters/maya/serious.webp",
+      "public/assets/characters/maya/smile.webp",
+      "public/assets/characters/maya/surprised.webp",
+      "public/assets/characters/maya/tease.webp",
+      "public/assets/characters/player/angry.webp",
+      "public/assets/characters/player/blush.webp",
+      "public/assets/characters/player/neutral.webp",
+      "public/assets/characters/player/sad.webp",
+      "public/assets/characters/player/serious.webp",
+      "public/assets/characters/player/smile.webp",
+      "public/assets/characters/player/surprised.webp",
+      "public/assets/characters/player/tease.webp",
+      "public/assets/characters/ravi/angry.webp",
+      "public/assets/characters/ravi/blush.webp",
+      "public/assets/characters/ravi/neutral.webp",
+      "public/assets/characters/ravi/sad.webp",
+      "public/assets/characters/ravi/serious.webp",
+      "public/assets/characters/ravi/smile.webp",
+      "public/assets/characters/ravi/surprised.webp",
+      "public/assets/characters/ravi/tease.webp"
+    ],
+    "background": [
+      "public/assets/backgrounds/auditorium.svg",
+      "public/assets/backgrounds/auditorium.webp",
+      "public/assets/backgrounds/cafe.svg",
+      "public/assets/backgrounds/cafe.webp",
+      "public/assets/backgrounds/campus.svg",
+      "public/assets/backgrounds/campus.webp",
+      "public/assets/backgrounds/council.svg",
+      "public/assets/backgrounds/downtown.webp",
+      "public/assets/backgrounds/festival-day.svg",
+      "public/assets/backgrounds/festival-night.svg",
+      "public/assets/backgrounds/festival.webp",
+      "public/assets/backgrounds/garden.webp",
+      "public/assets/backgrounds/library.webp",
+      "public/assets/backgrounds/night.webp",
+      "public/assets/backgrounds/park.svg",
+      "public/assets/backgrounds/rain.webp",
+      "public/assets/backgrounds/rooftop.svg",
+      "public/assets/backgrounds/rooftop.webp",
+      "public/assets/backgrounds/room.webp",
+      "public/assets/backgrounds/station.svg",
+      "public/assets/backgrounds/studio.svg",
+      "public/assets/backgrounds/studio.webp",
+      "public/assets/backgrounds/sunrise.svg"
+    ],
+    "cg": [
+      "public/assets/cg/cg_confession.webp",
+      "public/assets/cg/cg_festival.webp",
+      "public/assets/cg/cg_gael.webp",
+      "public/assets/cg/cg_intro.webp",
+      "public/assets/cg/cg_leon.webp",
+      "public/assets/cg/cg_library.webp",
+      "public/assets/cg/cg_photo.webp",
+      "public/assets/cg/cg_rain.webp",
+      "public/assets/cg/cg_ravi.webp",
+      "public/assets/cg/cg_rooftop.webp",
+      "public/assets/cg/cg_solo.webp",
+      "public/assets/cg/cg_studio.webp",
+      "public/assets/cg/finale-aurora.svg",
+      "public/assets/cg/finale-growth.svg",
+      "public/assets/cg/finale-romance.svg",
+      "public/assets/cg/gael-studio.svg",
+      "public/assets/cg/leon-festival.svg",
+      "public/assets/cg/ravi-auditorium.svg",
+      "public/assets/cg/ravi-lanterns.svg",
+      "public/assets/cg/route-confession.svg"
+    ],
+    "ui": [],
+    "extra": [
+      "public/assets/characters/gael-sheet.svg",
+      "public/assets/characters/iris-sheet.svg",
+      "public/assets/characters/leon-sheet.svg",
+      "public/assets/characters/maya-sheet.svg",
+      "public/assets/characters/ravi-sheet.svg",
+      "public/assets/characters/vivi-sheet.svg",
+      "public/assets/sheets/backgrounds/background-01.webp",
+      "public/assets/sheets/backgrounds/background-02.webp",
+      "public/assets/sheets/cg/cg-01.webp",
+      "public/assets/sheets/cg/cg-02.webp",
+      "public/assets/sheets/characters/gael-sheet.webp",
+      "public/assets/sheets/characters/leon-sheet.webp",
+      "public/assets/sheets/characters/maya-sheet.webp",
+      "public/assets/sheets/characters/player-sheet.webp",
+      "public/assets/sheets/characters/ravi-sheet.webp"
+    ]
+  },
+  "deadArchitectureReferences": {
+    "storyJsonCharacters": [
+      "vivi",
+      "gael",
+      "leon",
+      "ravi",
+      "maya",
+      "iris",
+      "start",
+      "choice",
+      "bridge",
+      "end",
+      "start",
+      "choice",
+      "bridge",
+      "end",
+      "start",
+      "choice",
+      "bridge",
+      "end",
+      "start",
+      "choice",
+      "bridge",
+      "end",
+      "start",
+      "choice",
+      "bridge",
+      "end",
+      "start",
+      "choice",
+      "bridge",
+      "end",
+      "start",
+      "choice",
+      "bridge",
+      "end",
+      "start",
+      "choice",
+      "bridge",
+      "end",
+      "start",
+      "choice",
+      "bridge",
+      "end",
+      "start",
+      "choice",
+      "bridge",
+      "end",
+      "gael",
+      "leon",
+      "ravi",
+      "maya",
+      "campus",
+      "cafe",
+      "studio",
+      "council",
+      "auditorium",
+      "park",
+      "sunrise"
+    ],
+    "note": "catalogado apenas como legado; não dirige o runtime ativo"
+  }
+}
