@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3072" height="768" viewBox="0 0 3072 768"><defs><linearGradient id="bg0" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1321"/><stop offset="1" stop-color="#d56bac" stop-opacity=".22"/></linearGradient><linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1321"/><stop offset="1" stop-color="#d56bac" stop-opacity=".22"/></linearGradient><linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1321"/><stop offset="1" stop-color="#d56bac" stop-opacity=".22"/></linearGradient><linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1321"/><stop offset="1" stop-color="#d56bac" stop-opacity=".22"/></linearGradient><linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1321"/><stop offset="1" stop-color="#d56bac" stop-opacity=".22"/></linearGradient><linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1321"/><stop offset="1" stop-color="#d56bac" stop-opacity=".22"/></linearGradient></defs><g transform="translate(0,0)">
+      <rect width="512" height="768" fill="url(#bg0)"/>
+      <ellipse cx="256" cy="810" rx="210" ry="260" fill="#3c2434"/>
+      <path d="M138 352 C120 210 170 104 256 98 C360 98 405 212 374 365 C348 472 316 546 256 552 C190 545 157 474 138 352Z" fill="#edb9a9"/>
+      <path d="M120 350 C98 212 126 76 252 72 C382 68 421 188 386 372 L352 285 C330 230 305 188 255 165 C211 196 170 225 147 300Z" fill="#a15d77"/>
+      <path d="M144 246 C174 174 220 138 272 128 C328 142 364 182 383 248 C352 214 319 197 275 182 C222 215 186 232 144 246Z" fill="#a15d77" opacity=".96"/>
+      <path d="M 176 270 Q 201 260 226 270" stroke="#6c3753" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <path d="M 286 270 Q 311 260 336 270" stroke="#6c3753" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <ellipse cx="204" cy="312" rx="21" ry="12" fill="#fff"/>
+      <ellipse cx="308" cy="312" rx="21" ry="12" fill="#fff"/>
+      <ellipse cx="204" cy="314" rx="9" ry="12" fill="#6c3753"/><circle cx="207" cy="309" r="3" fill="#fff"/>
+      <ellipse cx="308" cy="314" rx="9" ry="12" fill="#6c3753"/><circle cx="311" cy="309" r="3" fill="#fff"/>
+      
+      <g transform="translate(256,390)"><path d="M -18 0 Q 0 4 18 0" stroke="#8e4f5d" stroke-width="7" stroke-linecap="round" fill="none"/></g>
+      <path d="M173 511 Q256 575 339 511 L361 768 L151 768Z" fill="#d56bac" opacity=".9"/>
+      <path d="M229 544 L256 592 L283 544" fill="none" stroke="#f7e7e8" stroke-width="11"/>
+      <text x="256" y="722" text-anchor="middle" fill="rgba(255,255,255,.6)" font-family="system-ui" font-size="18" font-weight="800" letter-spacing="3">IRIS · NEUTRAL</text>
+    </g><g transform="translate(512,0)">
+      <rect width="512" height="768" fill="url(#bg1)"/>
+      <ellipse cx="256" cy="810" rx="210" ry="260" fill="#3c2434"/>
+      <path d="M138 352 C120 210 170 104 256 98 C360 98 405 212 374 365 C348 472 316 546 256 552 C190 545 157 474 138 352Z" fill="#edb9a9"/>
+      <path d="M120 350 C98 212 126 76 252 72 C382 68 421 188 386 372 L352 285 C330 230 305 188 255 165 C211 196 170 225 147 300Z" fill="#a15d77"/>
+      <path d="M144 246 C174 174 220 138 272 128 C328 142 364 182 383 248 C352 214 319 197 275 182 C222 215 186 232 144 246Z" fill="#a15d77" opacity=".96"/>
+      <path d="M 176 270 Q 201 260 226 270" stroke="#6c3753" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <path d="M 286 270 Q 311 260 336 270" stroke="#6c3753" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <ellipse cx="204" cy="312" rx="21" ry="12" fill="#fff"/>
+      <ellipse cx="308" cy="312" rx="21" ry="12" fill="#fff"/>
+      <ellipse cx="204" cy="314" rx="9" ry="12" fill="#6c3753"/><circle cx="207" cy="309" r="3" fill="#fff"/>
+      <ellipse cx="308" cy="314" rx="9" ry="12" fill="#6c3753"/><circle cx="311" cy="309" r="3" fill="#fff"/>
+      
+      <g transform="translate(256,390)"><path d="M -20 -2 Q 0 16 20 -2" stroke="#8e4f5d" stroke-width="7" stroke-linecap="round" fill="none"/></g>
+      <path d="M173 511 Q256 575 339 511 L361 768 L151 768Z" fill="#d56bac" opacity=".9"/>
+      <path d="M229 544 L256 592 L283 544" fill="none" stroke="#f7e7e8" stroke-width="11"/>
+      <text x="256" y="722" text-anchor="middle" fill="rgba(255,255,255,.6)" font-family="system-ui" font-size="18" font-weight="800" letter-spacing="3">IRIS · SMILE</text>
+    </g><g transform="translate(1024,0)">
+      <rect width="512" height="768" fill="url(#bg2)"/>
+      <ellipse cx="256" cy="810" rx="210" ry="260" fill="#3c2434"/>
+      <path d="M138 352 C120 210 170 104 256 98 C360 98 405 212 374 365 C348 472 316 546 256 552 C190 545 157 474 138 352Z" fill="#edb9a9"/>
+      <path d="M120 350 C98 212 126 76 252 72 C382 68 421 188 386 372 L352 285 C330 230 305 188 255 165 C211 196 170 225 147 300Z" fill="#a15d77"/>
+      <path d="M144 246 C174 174 220 138 272 128 C328 142 364 182 383 248 C352 214 319 197 275 182 C222 215 186 232 144 246Z" fill="#a15d77" opacity=".96"/>
+      <path d="M 176 270 Q 201 260 226 270" stroke="#6c3753" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <path d="M 286 270 Q 311 260 336 270" stroke="#6c3753" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <ellipse cx="204" cy="312" rx="21" ry="12" fill="#fff"/>
+      <ellipse cx="308" cy="312" rx="21" ry="12" fill="#fff"/>
+      <ellipse cx="204" cy="314" rx="9" ry="12" fill="#6c3753"/><circle cx="207" cy="309" r="3" fill="#fff"/>
+      <ellipse cx="308" cy="314" rx="9" ry="12" fill="#6c3753"/><circle cx="311" cy="309" r="3" fill="#fff"/>
+      
+      <g transform="translate(256,390)"><path d="M -16 2 L 16 2" stroke="#8e4f5d" stroke-width="7" stroke-linecap="round" fill="none"/></g>
+      <path d="M173 511 Q256 575 339 511 L361 768 L151 768Z" fill="#d56bac" opacity=".9"/>
+      <path d="M229 544 L256 592 L283 544" fill="none" stroke="#f7e7e8" stroke-width="11"/>
+      <text x="256" y="722" text-anchor="middle" fill="rgba(255,255,255,.6)" font-family="system-ui" font-size="18" font-weight="800" letter-spacing="3">IRIS · SERIOUS</text>
+    </g><g transform="translate(1536,0)">
+      <rect width="512" height="768" fill="url(#bg3)"/>
+      <ellipse cx="256" cy="810" rx="210" ry="260" fill="#3c2434"/>
+      <path d="M138 352 C120 210 170 104 256 98 C360 98 405 212 374 365 C348 472 316 546 256 552 C190 545 157 474 138 352Z" fill="#edb9a9"/>
+      <path d="M120 350 C98 212 126 76 252 72 C382 68 421 188 386 372 L352 285 C330 230 305 188 255 165 C211 196 170 225 147 300Z" fill="#a15d77"/>
+      <path d="M144 246 C174 174 220 138 272 128 C328 142 364 182 383 248 C352 214 319 197 275 182 C222 215 186 232 144 246Z" fill="#a15d77" opacity=".96"/>
+      <path d="M 178 268 L 226 281" stroke="#6c3753" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <path d="M 286 281 L 334 268" stroke="#6c3753" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <ellipse cx="204" cy="312" rx="21" ry="12" fill="#fff"/>
+      <ellipse cx="308" cy="312" rx="21" ry="12" fill="#fff"/>
+      <ellipse cx="204" cy="314" rx="9" ry="12" fill="#6c3753"/><circle cx="207" cy="309" r="3" fill="#fff"/>
+      <ellipse cx="308" cy="314" rx="9" ry="12" fill="#6c3753"/><circle cx="311" cy="309" r="3" fill="#fff"/>
+      
+      <g transform="translate(256,390)"><path d="M -18 6 Q 0 -3 18 6" stroke="#8e4f5d" stroke-width="7" stroke-linecap="round" fill="none"/></g>
+      <path d="M173 511 Q256 575 339 511 L361 768 L151 768Z" fill="#d56bac" opacity=".9"/>
+      <path d="M229 544 L256 592 L283 544" fill="none" stroke="#f7e7e8" stroke-width="11"/>
+      <text x="256" y="722" text-anchor="middle" fill="rgba(255,255,255,.6)" font-family="system-ui" font-size="18" font-weight="800" letter-spacing="3">IRIS · ANGRY</text>
+    </g><g transform="translate(2048,0)">
+      <rect width="512" height="768" fill="url(#bg4)"/>
+      <ellipse cx="256" cy="810" rx="210" ry="260" fill="#3c2434"/>
+      <path d="M138 352 C120 210 170 104 256 98 C360 98 405 212 374 365 C348 472 316 546 256 552 C190 545 157 474 138 352Z" fill="#edb9a9"/>
+      <path d="M120 350 C98 212 126 76 252 72 C382 68 421 188 386 372 L352 285 C330 230 305 188 255 165 C211 196 170 225 147 300Z" fill="#a15d77"/>
+      <path d="M144 246 C174 174 220 138 272 128 C328 142 364 182 383 248 C352 214 319 197 275 182 C222 215 186 232 144 246Z" fill="#a15d77" opacity=".96"/>
+      <path d="M 176 270 Q 201 260 226 270" stroke="#6c3753" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <path d="M 286 270 Q 311 260 336 270" stroke="#6c3753" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <ellipse cx="204" cy="312" rx="21" ry="12" fill="#fff"/>
+      <ellipse cx="308" cy="312" rx="21" ry="12" fill="#fff"/>
+      <ellipse cx="204" cy="314" rx="9" ry="12" fill="#6c3753"/><circle cx="207" cy="309" r="3" fill="#fff"/>
+      <ellipse cx="308" cy="314" rx="9" ry="12" fill="#6c3753"/><circle cx="311" cy="309" r="3" fill="#fff"/>
+      <ellipse cx="177" cy="380" rx="35" ry="13" fill="#ef8e9e" opacity=".38"/><ellipse cx="335" cy="380" rx="35" ry="13" fill="#ef8e9e" opacity=".38"/>
+      <g transform="translate(256,390)"><path d="M -18 -1 Q 0 11 18 -1" stroke="#8e4f5d" stroke-width="7" stroke-linecap="round" fill="none"/></g>
+      <path d="M173 511 Q256 575 339 511 L361 768 L151 768Z" fill="#d56bac" opacity=".9"/>
+      <path d="M229 544 L256 592 L283 544" fill="none" stroke="#f7e7e8" stroke-width="11"/>
+      <text x="256" y="722" text-anchor="middle" fill="rgba(255,255,255,.6)" font-family="system-ui" font-size="18" font-weight="800" letter-spacing="3">IRIS · BLUSH</text>
+    </g><g transform="translate(2560,0)">
+      <rect width="512" height="768" fill="url(#bg5)"/>
+      <ellipse cx="256" cy="810" rx="210" ry="260" fill="#3c2434"/>
+      <path d="M138 352 C120 210 170 104 256 98 C360 98 405 212 374 365 C348 472 316 546 256 552 C190 545 157 474 138 352Z" fill="#edb9a9"/>
+      <path d="M120 350 C98 212 126 76 252 72 C382 68 421 188 386 372 L352 285 C330 230 305 188 255 165 C211 196 170 225 147 300Z" fill="#a15d77"/>
+      <path d="M144 246 C174 174 220 138 272 128 C328 142 364 182 383 248 C352 214 319 197 275 182 C222 215 186 232 144 246Z" fill="#a15d77" opacity=".96"/>
+      <path d="M 176 270 Q 201 260 226 270" stroke="#6c3753" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <path d="M 286 270 Q 311 260 336 270" stroke="#6c3753" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <ellipse cx="204" cy="312" rx="21" ry="18" fill="#fff"/>
+      <ellipse cx="308" cy="312" rx="21" ry="18" fill="#fff"/>
+      <ellipse cx="204" cy="314" rx="9" ry="12" fill="#6c3753"/><circle cx="207" cy="309" r="3" fill="#fff"/>
+      <ellipse cx="308" cy="314" rx="9" ry="12" fill="#6c3753"/><circle cx="311" cy="309" r="3" fill="#fff"/>
+      
+      <g transform="translate(256,390)"><path d="M -13 0 Q 0 18 13 0 Q 0 -8 -13 0" stroke="#8e4f5d" stroke-width="7" stroke-linecap="round" fill="none"/></g>
+      <path d="M173 511 Q256 575 339 511 L361 768 L151 768Z" fill="#d56bac" opacity=".9"/>
+      <path d="M229 544 L256 592 L283 544" fill="none" stroke="#f7e7e8" stroke-width="11"/>
+      <text x="256" y="722" text-anchor="middle" fill="rgba(255,255,255,.6)" font-family="system-ui" font-size="18" font-weight="800" letter-spacing="3">IRIS · SURPRISED</text>
+    </g></svg>
