@@ -87,7 +87,10 @@ async function buildPreview(category, ids, sourceDir, outputDir) {
 }
 await buildPreview('background', inventory.active.backgrounds, 'backgrounds', 'backgrounds');
 await buildPreview('cg', inventory.active.cgs, 'cg', 'cg');
-fallbackManifest.characters = Object.fromEntries(inventory.active.characters.map(character => [character, { tease: 'smile', sad: 'serious' }]));
+fallbackManifest.characters = {};
+for (const character of inventory.active.characters) {
+  if (!(await exists(`tools/generated/ai-character-sheets/${character}-sheet.png`))) fallbackManifest.characters[character] = { tease: 'smile', sad: 'serious' };
+}
 await write('tools/generated/asset-fallbacks.json', Buffer.from(`${JSON.stringify(fallbackManifest, null, 2)}\n`));
 await write('tools/generated/asset-sheets-manifest.json', Buffer.from(`${JSON.stringify(sheetManifest, null, 2)}\n`));
 await write('public/assets/sheets/manifest.json', Buffer.from(`${JSON.stringify(sheetManifest, null, 2)}\n`));
