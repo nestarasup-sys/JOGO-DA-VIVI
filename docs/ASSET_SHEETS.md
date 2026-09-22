@@ -1,14 +1,7 @@
-# Asset Sheets V3
+# Asset Sheets
 
-As folhas atuais são placeholders funcionais. O objetivo é substituí-las progressivamente por arte final sem mudar caminhos nem IDs.
+O formato canônico é uma sheet 4×2 por personagem, com oito células de 512×768 na ordem `neutral, smile, tease, serious, blush, angry, sad, surprised`. Backgrounds e CGs usam previews 4×2 de até oito itens por página, em thumbnails 640×360 e com rótulo.
 
-## Personagens
-Grid 8 x 5, célula 512x768. Colunas: neutral, smile, tease, serious, blush, angry, sad, surprised. Linhas: gael, leon, ravi, maya, player.
+O inventário recalcula os nomes e a quantidade de sheets em cada execução. No estado atual são 5 sheets de personagens, 2 de backgrounds e 2 de CGs: 9 ao todo.
 
-## Backgrounds
-Grid 4 x 3, célula 640x360. IDs: campus, library, cafe, rain, rooftop, festival, room, garden, studio, auditorium, downtown, night.
-
-## CG
-Grid 4 x 3, célula 512x320. IDs definidos no manifesto.
-
-Depois de substituir uma folha, execute `npm run assets:slice`.
+Execute `npm run assets:rebuild-all` depois de trocar uma fonte. O manifest em `public/assets/sheets/manifest.json` descreve células, coordenadas, fontes e fallbacks.
