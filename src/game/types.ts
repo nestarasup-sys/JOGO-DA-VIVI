@@ -5,3 +5,5 @@ export type Choice={text:string;tag?:string;effects?:Effects};
 export type SceneNode={type?:'routeVariant'|'routeScene'|'ending';bg?:string;loc?:string;speaker?:string;text?:string;show?:[CharacterId,Expression][];choice?:Choice[];effects?:Effects;unlockCG?:string;end?:boolean;flag?:string;variants?:Record<string,SceneNode>};
 export type Episode={id:number;title:string;subtitle:string;desc:string;cover:string;nodes:SceneNode[]};
 export type Story={meta:{version:number;title:string;season:string};episodes:Episode[]};
+export type HistoryLine={speaker:string;text:string;episode:number;node:number;at:number};
+export type DecisionLog={episode:number;node:number;text:string;impact:'neutral'|'relationship'|'major';at:number};

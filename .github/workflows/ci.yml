@@ -1,7 +1,7 @@
 name: V3 CI
 on:
   push:
-    branches: [main, v3-ultra]
+    branches: [main, v3-ultra, oai/romance-system-overhaul-v4]
   pull_request:
     branches: [main]
 jobs:
