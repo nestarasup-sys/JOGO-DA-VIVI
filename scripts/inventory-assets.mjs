@@ -93,11 +93,13 @@ for (const character of canonicalCharacters) {
 }
 for (const id of canonicalBackgrounds) {
   const matches = byCategory.background.filter(file => new RegExp(`/${id}\\.(png|webp|svg)$`).test(file));
-  addEntry('background', id, matches[0] || `public/assets/backgrounds/${id}.webp`, matches.length > 1 ? 'duplicated' : matches.length ? 'ok' : 'missing', matches.length > 1 ? `${matches.length} arquivos candidatos` : matches.length ? 'referenciado pela campanha ou catálogo ativo' : 'referenciado, mas não encontrado');
+  const canonical = matches.find(file => file.endsWith('.webp')) || matches.find(file => file.endsWith('.png')) || matches.find(file => file.endsWith('.svg'));
+  addEntry('background', id, canonical || `public/assets/backgrounds/${id}.webp`, matches.some(file => file.endsWith('.webp')) ? 'ok' : matches.length > 1 ? 'duplicated' : matches.length ? 'ok' : 'missing', matches.some(file => file.endsWith('.webp')) ? 'saída WebP canônica disponível; SVG preservado como fonte' : matches.length > 1 ? `${matches.length} arquivos candidatos` : matches.length ? 'referenciado pela campanha ou catálogo ativo' : 'referenciado, mas não encontrado');
 }
 for (const id of canonicalCgs) {
   const matches = byCategory.cg.filter(file => new RegExp(`/${id}\\.(png|webp|svg)$`).test(file));
-  addEntry('cg', id, matches[0] || `public/assets/cg/${id}.webp`, matches.length > 1 ? 'duplicated' : matches.length ? 'ok' : 'missing', matches.length > 1 ? `${matches.length} arquivos candidatos` : matches.length ? 'referenciado pela campanha, finais ou galeria' : 'referenciado, mas não encontrado');
+  const canonical = matches.find(file => file.endsWith('.webp')) || matches.find(file => file.endsWith('.png')) || matches.find(file => file.endsWith('.svg'));
+  addEntry('cg', id, canonical || `public/assets/cg/${id}.webp`, matches.some(file => file.endsWith('.webp')) ? 'ok' : matches.length > 1 ? 'duplicated' : matches.length ? 'ok' : 'missing', matches.some(file => file.endsWith('.webp')) ? 'saída WebP canônica disponível; SVG preservado como fonte' : matches.length > 1 ? `${matches.length} arquivos candidatos` : matches.length ? 'referenciado pela campanha, finais ou galeria' : 'referenciado, mas não encontrado');
 }
 for (const file of [...byCategory.background, ...byCategory.cg, ...sourceCharacterSheets]) {
   const used = entries.some(entry => entry.currentPath === file);
