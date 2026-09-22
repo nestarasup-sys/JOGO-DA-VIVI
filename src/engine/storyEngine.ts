@@ -1,11 +1,4 @@
-import type {
-  Condition,
-  Effect,
-  GameSaveStateLike,
-  StoryData,
-  StoryNode
-} from './storyEngineTypes';
-import type { SaveSnapshot } from '../types/game';
+import type { Condition, Effect, SaveSnapshot, StoryData, StoryNode } from '../types/game';
 
 export type ConditionState = Pick<
   SaveSnapshot,
@@ -59,12 +52,19 @@ export function validateStory(story: StoryData): string[] {
   for (const episode of story.episodes ?? []) {
     if (!episode.nodes[episode.startNode]) {
       errors.push(`${episode.id}: startNode "${episode.startNode}" não existe.`);
+      continue;
     }
 
     const nodeIds = new Set(Object.keys(episode.nodes));
-    for (const node of Object.values(episode.nodes)) {
+    let hasEnd = false;
+    for (const [key, node] of Object.entries(episode.nodes)) {
+      if (node.id !== key) errors.push(`${episode.id}/${key}: id interno "${node.id}" difere da chave.`);
+      if (node.type === 'end') hasEnd = true;
       if (node.next && !nodeIds.has(node.next)) {
         errors.push(`${episode.id}/${node.id}: next "${node.next}" não existe.`);
+      }
+      if (node.type === 'choice' && !node.choices?.length) {
+        errors.push(`${episode.id}/${node.id}: choice sem opções.`);
       }
       for (const choice of node.choices ?? []) {
         if (!nodeIds.has(choice.to)) {
@@ -72,10 +72,10 @@ export function validateStory(story: StoryData): string[] {
         }
       }
     }
+    if (!hasEnd) errors.push(`${episode.id}: episódio não possui node do tipo end.`);
   }
   return errors;
 }
 
-// Tipos de compatibilidade mantidos aqui para o editor poder importar somente um módulo.
 export type StoryEngineEffect = Effect;
-export type StoryEngineState = GameSaveStateLike;
+export type StoryEngineState = SaveSnapshot;
